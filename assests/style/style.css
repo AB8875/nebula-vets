@@ -1,0 +1,17 @@
+.body-color {
+  background: var(--Grey-2, rgba(215, 217, 221, 0.5));
+}
+.swiper-pagination-bullet-active {
+  background: #494336 !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

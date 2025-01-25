@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.roboto-mono {
+  font-family: "Roboto Mono", serif;
+}
+@font-face {
+  font-family: "avanttTRIAL-Normal";
+  src: url("../font-family/avantt-font-family-1737758197-0/AvanttTRIAL-Light-BF6721a86aa5f5e.otf");
+}
+.avanttTRIAL-Normal {
+  font-family: "avanttTRIAL-Normal";
+}
+@font-face {
+  font-family: "avanttTRIAL-Regular";
+  src: url("../font-family/avantt-font-family-1737758197-0/AvanttTRIAL-Regular-BF6721a86b1a848.otf");
+}
+.avanttTRIAL-Regular {
+  font-family: "avanttTRIAL-Regular";
+}
+@font-face {
+  font-family: "avanttTRIAL-Medium";
+  src: url("../font-family/avantt-font-family-1737758197-0/AvanttTRIAL-Medium-BF6721a86adebb3.otf");
+}
+.avanttTRIAL-Medium {
+  font-family: "avanttTRIAL-Medium";
+}
+@font-face {
+  font-family: "avanttTRIAL-Semibold";
+  src: url("../font-family/avantt-font-family-1737758197-0/AvanttTRIAL-SemiBold-BF6721a86b1576e.otf");
+}
+.avanttTRIAL-Semibold {
+  font-family: "avanttTRIAL-Semibold";
+}
+@font-face {
+  font-family: "avanttTRIAL-bold";
+  src: url("../font-family/avantt-font-family-1737758197-0/AvanttTRIAL-Bold-BF6721a86b15f0a.otf");
+}
+.avanttTRIAL-bold {
+  font-family: "avanttTRIAL-bold";
+}
+@font-face {
+  font-family: "avanttTRIAL-Extrabold";
+  src: url("../font-family/avantt-font-family-1737758197-0/AvanttTRIAL-ExtraBold-BF6721a86b196a3.otf");
+}
+.avanttTRIAL-Extrabold {
+  font-family: "avanttTRIAL-Extrabold";
+}
