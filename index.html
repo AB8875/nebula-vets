@@ -14,86 +14,149 @@
   </head>
   <body class="body-color">
     <!-- NAV BAR -->
-    <section>
-      <div class="bg-[#494336]">
-        <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-7">
+    <div class="relative overflow-hidden">
+      <section>
+        <div class="bg-[#494336]">
           <div
-            class="flex flex-wrap md:flex-row items-center justify-center md:justify-between gap-y-4 md:gap-y-0"
+            class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-7"
           >
-            <div>
-              <img
-                class="max-w-[120px]"
-                src="./assests/img/logo.png"
-                alt="logo"
-              />
-            </div>
             <div
-              class="flex flex-wrap justify-center md:flex-row items-center gap-3 md:gap-5 lg:gap-15"
+              class="flex flex-wrap md:flex-row items-center justify-between gap-y-4 md:gap-y-0"
             >
               <div>
-                <ul
-                  class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex flex-wrap justify-center items-center gap-4 md:gap-5 lg:gap-15"
-                >
-                  <li class="roboto-mono">SERVICES</li>
-                  <li class="roboto-mono">ABOUT US</li>
-                  <li class="roboto-mono">LOCATION</li>
-                  <li class="roboto-mono">CAREER</li>
-                  <li class="roboto-mono">PATIENT PORTAL</li>
-                </ul>
+                <a href="/">
+                  <img
+                    class="max-w-[90px] sm:max-w-[120px]"
+                    src="./assests/img/logo.png"
+                    alt="logo"
+                  />
+                </a>
               </div>
-              <div class="mt-4 md:mt-0">
+              <div class="block md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="49"
+                  height="27"
+                  viewBox="0 0 49 27"
+                  fill="none"
+                >
+                  <path
+                    d="M0.0338135 22.5562H48.0338V26.1812H0.0338135V22.5562Z"
+                    fill="#D8DADC"
+                  />
+                  <path
+                    d="M0.0338135 0.806152H48.0338V4.43115H0.0338135V0.806152Z"
+                    fill="#D8DADC"
+                  />
+                  <path
+                    d="M0.0338135 11.6812H48.0338V15.3062H0.0338135V11.6812Z"
+                    fill="#D8DADC"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex flex-wrap justify-center md:flex-row items-center gap-3 md:gap-5 lg:gap-15 hidden md:flex"
+              >
+                <div>
+                  <ul
+                    class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex justify-center items-center gap-4 md:gap-5 lg:gap-10"
+                  >
+                    <li
+                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    >
+                      <a href="./veterinary-services.html">SERVICES</a>
+                    </li>
+                    <li
+                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    >
+                      <a href="/"> ABOUT US</a>
+                    </li>
+                    <li
+                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    >
+                      <a href="/">LOCATION</a>
+                    </li>
+                    <li
+                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    >
+                      <a href="/">CAREER</a>
+                    </li>
+                    <li
+                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    >
+                      <a href="/">PATIENT PORTAL</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-4 md:mt-0 group">
+                  <a
+                    href="/"
+                    class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-[5px] sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] group-hover:bg-linear-[50deg,#FFA280_50%,#8FD9D9_50%] transtion-all duration-300 ease-in"
+                    >BOOK NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HERO SECTION -->
+      <section class="relative">
+        <div
+          class="bg-[url('./assests/img/hero-bg.png')] bg-[65%] sm:bg-top bg-no-repeat bg-cover w-full h-[300px] sm:h-[567px] overflow-hidden mt-[350px] sm:mt-0"
+        >
+          <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
+            <div
+              class="absolute top-[-100%] sm:top-[20%] left-[7%] sm:left-[14%]"
+            >
+              <h1
+                class="text-[#494336] sm:text-[#D7D9DD] avanttTRIAL-Regular text-[35px] sm:text-[40px] md:text-[47px] lg:text-[52px] xl:text-[70px] max-w-[250px] sm:max-w-[511px]"
+              >
+                Welcome to Nebula Vets
+              </h1>
+              <p
+                class="text-[#494336] sm:text-[#D7D9DD] roboto-mono text-base sm:text-xl md:text-[22px] lg:text-[28px] mt-5"
+              >
+                Reinventing Pet Medicine
+              </p>
+              <div class="mt-11 group">
                 <a
                   href="/"
-                  class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-3 px-9"
+                  class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-[5px] sm:py-3 px-5 sm:px-9 border-1 group-hover:rounded-[5px] group-hover:bg-linear-[50deg,#FFA280_50%,#8FD9D9_50%] transtion-all duration-300 ease-in"
                   >BOOK NOW</a
                 >
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- HERO SECTION -->
-    <section class="relative">
-      <div
-        class="bg-[url('./assests/img/hero-bg.png')] bg-no-repeat bg-cover w-full h-[567px] overflow-hidden"
-      >
-        <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
-          <div class="absolute top-[20%] left-[14%]">
-            <h1
-              class="text-[#D7D9DD] avanttTRIAL-Regular text-[70px] max-w-[511px]"
-            >
-              Welcome to Nebula Vets
-            </h1>
-            <p class="text-[#D7D9DD] roboto-mono text-[28px] mt-5">
-              Reinventing Pet Medicine
-            </p>
-            <div class="mt-10">
-              <a
-                href="/"
-                class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-3 px-9"
-                >BOOK NOW</a
-              >
+            <div class="relative hidden sm:block">
+              <img
+                class="absolute right-[-230px] overflow-hidden pt-5"
+                src="./assests/img/hero-section-img.png"
+                alt="hero-section-img"
+              />
             </div>
           </div>
-          <div class="relative">
-            <img
-              class="absolute right-[-230px] overflow-hidden pt-5"
-              src="./assests/img/hero-section-img.png"
-              alt="hero-section-img"
-            />
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <img
+        class="absolute top-[43%] right-[-117px] max-w-[265px]"
+        src="./assests/img/hero-section-img.png "
+        alt="abs-nebula"
+      />
+    </div>
     <!-- OUR APPROACH -->
     <section>
       <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
-        <div class="flex gap-15 justify-center pt-[80px] pb-[80px]">
-          <h1 class="text-4xl text-[#494336] avanttTRIAL-Normal max-w-[166px]">
+        <div
+          class="flex flex-col md:flex-row gap-3 md:gap-15 justify-center pt-[60px] md:pt-[80px] pb-[60px] md:pb-[80px] px-4 md:px-0"
+        >
+          <h1
+            class="text-2xl sm:text-4xl text-[#494336] avanttTRIAL-Normal md:max-w-[166px]"
+          >
             Our Approach
           </h1>
-          <p class="text-[#494336] text-xl leading-[130%] max-w-[840px]">
+          <p
+            class="text-[#494336] text-sm sm:text-xl leading-[130%] max-w-[840px]"
+          >
             At our independent veterinary hospital, we combine compassion,
             advanced expertise, and a commitment to exceptional care. From
             routine check-ups to urgent and emergency situations, we are here to
@@ -106,29 +169,33 @@
     <!-- WHY CHOOSE NEBULA -->
     <section class="bg-[#494336]">
       <div
-        class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[80px] pb-[80px]"
+        class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[60px] sm:pt-[80px] pb-[60px] sm:pb-[80px]"
       >
-        <div class="flex flex-col">
-          <h1 class="text-[#D7D9DD] avanttTRIAL-Normal text-5xl pl-[95px]">
+        <div class="xl:px-12">
+          <h1
+            class="text-[#D7D9DD] avanttTRIAL-Normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl pl-0 text-center sm:text-start lg:pl-[50px]"
+          >
             Why choose Nebula Vets?
           </h1>
-          <!-- accordion -->
-          <div class="flex items-center justify-evenly mt-[60px]">
-            <div class="flex flex-col gap-y-8 w-[39%]">
+
+          <div
+            class="flex flex-col gap-y-8 gap-x-0 xl:gap-x-15 md:gap-y-0 md:flex-row items-center justify-between xl:justify-around mt-[40px] sm:mt-[60px] px-4"
+          >
+            <div class="flex flex-col gap-y-8 w-full md:w-[39%]">
               <div
                 onclick="toggleAccordion('accordion1')"
                 class="max-w-[480px]"
               >
                 <div class="flex items-center justify-between">
                   <h1
-                    class="roboto-mono text-2xl leading-[150%] text-[#D7D9DD]"
+                    class="roboto-mono text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#D7D9DD]"
                   >
                     Cutting-Edge Technology
                   </h1>
                   <span>
                     <img
                       id="icon-accordion1"
-                      class="size-7 cursor-pointer"
+                      class="size-6 sm:size-7 cursor-pointer rotate-0 transition-transform transform"
                       src="./assests/img/pls-sign.png"
                       alt="pls-sign"
                     />
@@ -151,14 +218,14 @@
               >
                 <div class="flex items-center justify-between">
                   <h1
-                    class="roboto-mono text-2xl leading-[150%] text-[#D7D9DD]"
+                    class="roboto-mono text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#D7D9DD]"
                   >
                     Independant
                   </h1>
                   <span>
                     <img
                       id="icon-accordion2"
-                      class="size-7 cursor-pointer"
+                      class="size-6 sm:size-7 cursor-pointer"
                       src="./assests/img/pls-sign.png"
                       alt="pls-sign"
                     />
@@ -181,14 +248,14 @@
               >
                 <div class="flex items-center justify-between">
                   <h1
-                    class="roboto-mono text-2xl leading-[150%] text-[#D7D9DD]"
+                    class="roboto-mono text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#D7D9DD]"
                   >
                     Progressive Medicine
                   </h1>
                   <span>
                     <img
                       id="icon-accordion3"
-                      class="size-7 cursor-pointer"
+                      class="size-6 sm:size-7 cursor-pointer"
                       src="./assests/img/pls-sign.png"
                       alt="pls-sign"
                     />
@@ -206,21 +273,21 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col gap-y-8 w-[39%]">
+            <div class="flex flex-col gap-y-8 w-full md:w-[39%]">
               <div
                 onclick="toggleAccordion('accordion4')"
                 class="max-w-[480px]"
               >
                 <div class="flex items-center justify-between">
                   <h1
-                    class="roboto-mono text-2xl leading-[150%] text-[#D7D9DD]"
+                    class="roboto-mono text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#D7D9DD]"
                   >
                     Environmentally conscious​
                   </h1>
                   <span>
                     <img
                       id="icon-accordion4"
-                      class="size-7 cursor-pointer"
+                      class="size-6 sm:size-7 cursor-pointer"
                       src="./assests/img/pls-sign.png"
                       alt="pls-sign"
                     />
@@ -243,14 +310,14 @@
               >
                 <div class="flex items-center justify-between">
                   <h1
-                    class="roboto-mono text-2xl leading-[150%] text-[#D7D9DD]"
+                    class="roboto-mono text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#D7D9DD]"
                   >
                     Expert Team
                   </h1>
                   <span>
                     <img
                       id="icon-accordion5"
-                      class="size-7 cursor-pointer"
+                      class="size-6 sm:size-7 cursor-pointer"
                       src="./assests/img/pls-sign.png"
                       alt="pls-sign"
                     />
@@ -273,14 +340,14 @@
               >
                 <div class="flex items-center justify-between">
                   <h1
-                    class="roboto-mono text-2xl leading-[150%] text-[#D7D9DD]"
+                    class="roboto-mono text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#D7D9DD]"
                   >
                     Education
                   </h1>
                   <span>
                     <img
                       id="icon-accordion6"
-                      class="size-7 cursor-pointer"
+                      class="size-6 sm:size-7 cursor-pointer"
                       src="./assests/img/pls-sign.png"
                       alt="pls-sign"
                     />
@@ -305,14 +372,16 @@
     <!-- OUR SERVICE -->
     <section class="bg-white">
       <div
-        class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[80px] pb-[140px]"
+        class="max-w-[1440px] mx-auto px-7 md:px-7 lg:px-10 xl:px-12 pt-[80px] pb-[90px] lg:pb-[140px]"
       >
-        <div class="max-w-[770px] pl-[95px]">
-          <h1 class="avanttTRIAL-Normal text-5xl text-[#494336]">
+        <div class="max-w-[770px] pl-0 lg:pl-[95px]">
+          <h1
+            class="avanttTRIAL-Normal text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-[#494336]"
+          >
             Our Services
           </h1>
           <p
-            class="text-[#494336] avanttTRIAL-Normal text-xl leading-[130%] mt-7"
+            class="text-[#494336] avanttTRIAL-Normal text-sm sm:text-base lg:text-xl leading-[130%] mt-7"
           >
             We are proud to offer a comprehensive range of exceptional clinical
             services to cater to all your pet's needs. From routine wellness
@@ -321,20 +390,21 @@
             to be there for you and your beloved companion every step of the
             way.
           </p>
-          <div class="mt-10">
+          <div class="mt-10 group">
             <a
               href="/"
-              class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-3 px-9"
+              class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-[5px] sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] group-hover:bg-linear-[50deg,#FFA280_50%,#8FD9D9_50%] transtion-all duration-300 ease-in"
               >LEARN MORE</a
             >
           </div>
         </div>
-        <!-- swiper -->
 
-        <div class="swiper mySwiper mt-[80px]">
+        <div class="swiper mySwiper mt-[60px] sm:mt-[80px]">
           <div class="swiper-wrapper gap-x-[10px]">
             <div class="swiper-slide">
-              <div class="bg-[#494336] w-[300px] h-[419px] p-5">
+              <div
+                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
+              >
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -343,12 +413,12 @@
                   />
                 </div>
                 <h1
-                  class="text-[#D7D9DD] avanttTRIAL-Normal text-4xl mt-[50px]"
+                  class="text-[#D7D9DD] avanttTRIAL-Normal text-2xl lg:text-4xl mt-4"
                 >
                   Preventive Care
                 </h1>
                 <ul
-                  class="*:text-[#D7D9DD] *:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
+                  class="*:text-[#D7D9DD] *:text-sm md:*:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
                 >
                   <li>
                     <a href="/" class="underline underline-offset-2"
@@ -367,7 +437,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-[#494336] w-[300px] h-[419px] p-5">
+              <div
+                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
+              >
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -376,16 +448,16 @@
                   />
                 </div>
                 <h1
-                  class="text-[#D7D9DD] avanttTRIAL-Normal text-4xl mt-[50px]"
+                  class="text-[#D7D9DD] avanttTRIAL-Normal text-2xl lg:text-4xl mt-4"
                 >
                   Sick Patient Care
                 </h1>
                 <ul
-                  class="*:text-[#D7D9DD] *:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
+                  class="*:text-[#D7D9DD] *:text-sm md:*:text-lg*:leading-[144%] flex flex-col gap-y-[6px] mt-4"
                 >
                   <li class="w-[160px]">
                     <a href="/" class="underline underline-offset-2"
-                      >Urgent &  Emergency Care</a
+                      >Urgent & Emergency Care</a
                     >
                   </li>
                   <li>
@@ -407,7 +479,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-[#494336] w-[300px] h-[419px] p-5">
+              <div
+                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
+              >
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -416,12 +490,12 @@
                   />
                 </div>
                 <h1
-                  class="text-[#D7D9DD] avanttTRIAL-Normal text-4xl mt-[50px]"
+                  class="text-[#D7D9DD] avanttTRIAL-Normal text-2xl lg:text-4xl mt-4"
                 >
                   Surgery
                 </h1>
                 <ul
-                  class="*:text-[#D7D9DD] *:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
+                  class="*:text-[#D7D9DD] *:text-sm md:*:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
                 >
                   <li>
                     <a href="/" class="underline underline-offset-2"
@@ -437,7 +511,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-[#494336] w-[300px] h-[419px] p-5">
+              <div
+                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
+              >
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -446,12 +522,12 @@
                   />
                 </div>
                 <h1
-                  class="text-[#D7D9DD] avanttTRIAL-Normal text-4xl mt-[50px]"
+                  class="text-[#D7D9DD] avanttTRIAL-Normal text-2xl lg:text-4xl mt-4"
                 >
                   Additional Services
                 </h1>
                 <ul
-                  class="*:text-[#D7D9DD] *:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
+                  class="*:text-[#D7D9DD] *:text-sm md:*:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
                 >
                   <li>
                     <a href="/" class="underline underline-offset-2"
@@ -472,7 +548,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-[#494336] w-[300px] h-[419px] p-5">
+              <div
+                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
+              >
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -481,12 +559,12 @@
                   />
                 </div>
                 <h1
-                  class="text-[#D7D9DD] avanttTRIAL-Normal text-4xl mt-[50px]"
+                  class="text-[#D7D9DD] avanttTRIAL-Normal text-2xl lg:text-4xl mt-4"
                 >
                   Preventive Care
                 </h1>
                 <ul
-                  class="*:text-[#D7D9DD] *:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
+                  class="*:text-[#D7D9DD] *:text-sm md:*:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
                 >
                   <li>
                     <a href="/" class="underline underline-offset-2"
@@ -505,7 +583,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-[#494336] w-[300px] h-[419px] p-5">
+              <div
+                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
+              >
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -514,16 +594,16 @@
                   />
                 </div>
                 <h1
-                  class="text-[#D7D9DD] avanttTRIAL-Normal text-4xl mt-[50px]"
+                  class="text-[#D7D9DD] avanttTRIAL-Normal text-2xl lg:text-4xl mt-4"
                 >
                   Sick Patient Care
                 </h1>
                 <ul
-                  class="*:text-[#D7D9DD] *:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
+                  class="*:text-[#D7D9DD] *:text-sm md:*:text-lg*:leading-[144%] flex flex-col gap-y-[6px] mt-4"
                 >
                   <li class="w-[160px]">
                     <a href="/" class="underline underline-offset-2"
-                      >Urgent &  Emergency Care</a
+                      >Urgent & Emergency Care</a
                     >
                   </li>
                   <li>
@@ -545,7 +625,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-[#494336] w-[300px] h-[419px] p-5">
+              <div
+                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
+              >
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -554,12 +636,12 @@
                   />
                 </div>
                 <h1
-                  class="text-[#D7D9DD] avanttTRIAL-Normal text-4xl mt-[50px]"
+                  class="text-[#D7D9DD] avanttTRIAL-Normal text-2xl lg:text-4xl mt-4"
                 >
                   Surgery
                 </h1>
                 <ul
-                  class="*:text-[#D7D9DD] *:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
+                  class="*:text-[#D7D9DD] *:text-sm md:*:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
                 >
                   <li>
                     <a href="/" class="underline underline-offset-2"
@@ -569,41 +651,6 @@
                   <li>
                     <a href="/" class="underline underline-offset-2"
                       >Spay & Neuter</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="bg-[#494336] w-[300px] h-[419px] p-5">
-                <div>
-                  <img
-                    class="max-w-[90px]"
-                    src="./assests/img/additional-services.png"
-                    alt="add"
-                  />
-                </div>
-                <h1
-                  class="text-[#D7D9DD] avanttTRIAL-Normal text-4xl mt-[50px]"
-                >
-                  Additional Services
-                </h1>
-                <ul
-                  class="*:text-[#D7D9DD] *:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4"
-                >
-                  <li>
-                    <a href="/" class="underline underline-offset-2"
-                      >Travel Certificates</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/" class="underline underline-offset-2"
-                      >Skin & Dermatology</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/" class="underline underline-offset-2"
-                      >Euthanasia</a
                     >
                   </li>
                 </ul>
@@ -619,16 +666,20 @@
       <div
         class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[80px] pb-[80px]"
       >
-        <div class="flex items-center justify-between">
-          <div class="max-w-[591px]">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-10"
+        >
+          <div class="xl:max-w-[591px]">
             <img class="w-full" src="./assests/img/dog-car.png" alt="dog-cat" />
           </div>
-          <div class="max-w-[639px]">
-            <h1 class="text-5xl avanttTRIAL-Normal text-[#494336]">
+          <div class="max-w-none lg:max-w-[639px]">
+            <h1
+              class="text-2xl sm:text-3xl md:text-4xl xl:text-5xl avanttTRIAL-Normal text-[#494336]"
+            >
               About Nebula Vets ?
             </h1>
             <p
-              class="avanttTRIAL-Normal text-[#494336] text-xl leading-[130%] mt-6"
+              class="avanttTRIAL-Normal text-[#494336] text-sm sm:text-xl leading-[130%] mt-3 sm:mt-6"
             >
               Founded on a strong set of core values, the story of Nebula Vets
               began with Daniel Hodnett-Lewis, a visionary veterinary surgeon
@@ -638,10 +689,10 @@
               the way pets are treated and cared for. Here's the story of Nebula
               Vets:
             </p>
-            <div class="mt-13">
+            <div class="mt-10 md:mt-13 group">
               <a
                 href="/"
-                class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-3 px-9"
+                class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-[5px] sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] group-hover:bg-linear-[50deg,#FFA280_50%,#8FD9D9_50%] transtion-all duration-300 ease-in"
                 >LEARN MORE</a
               >
             </div>
@@ -649,36 +700,38 @@
         </div>
       </div>
       <img
-        class="absolute right-0 top-0"
+        class="absolute h-[300px] sm:h-auto right-0 bottom-0 lg:bottom-100 lg:top-0"
         src="./assests/img/abs-nebula.png"
         alt="abs-nebula"
       />
     </section>
     <!-- BOTTOM -->
-    <section class="bg-[#494336] min-h-screen">
+    <section class="bg-[#494336]">
       <div
-        class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[80px]"
+        class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[60px] md:pt-[80px]"
       >
-        <div class="flex items-center justify-between">
-          <div class="pl-[95px] w-[50%]">
-            <h1 class="avanttTRIAL-Normal text-5xl text-[#D7D9DD]">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <div class="pl-0 xl:pl-[95px] lg:w-[50%]">
+            <h1
+              class="avanttTRIAL-Normal text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-[#D7D9DD]"
+            >
               Our Mission
             </h1>
             <p
-              class="text-[#D7D9DD] avanttTRIAL-Normal text-xl leading-[130%] mt-7 max-w-[568px]"
+              class="text-[#D7D9DD] avanttTRIAL-Normal text-sm sm:text-xl leading-[130%] mt-7 max-w-none xl:max-w-[568px]"
             >
               Mission is to establish a new standard of excellence in veterinary
               care, driven by an unwavering ethical conscience.
             </p>
-            <div class="mt-10">
+            <div class="mt-10 group">
               <a
                 href="/"
-                class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-3 px-9"
+                class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] bg-linear-[90deg,#FFA280_0%,#8FD9D9_100%] rounded-[27px] py-[5px] sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] group-hover:bg-linear-[50deg,#FFA280_50%,#8FD9D9_50%] transtion-all duration-300 ease-in"
                 >BOOK NOW</a
               >
             </div>
           </div>
-          <div class="max-w-[580px]">
+          <div class="max-w-[290px] ms-auto mt-4 sm:mt-0 sm:max-w-[580px]">
             <img
               class="w-full"
               src="./assests/img/nebula-dog-car.png"
@@ -691,153 +744,189 @@
       <div
         class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[60px] pb-[60px]"
       >
-        <div>
-          <h1 class="text-[#D7D9DD] roboto-mono text-2xl leading-[150%]">
-            Stay in touch:
-          </h1>
-          <input
-            type="text"
-            placeholder="Email"
-            class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-lg w-full max-w-[300px] mt-6"
-          />
-          <div class="flex items-center gap-x-5 mt-6">
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="51"
-                viewBox="0 0 50 51"
-                fill="none"
-              >
-                <path
-                  d="M24.6478 0.622559C11.035 0.622559 0 11.697 0 25.3584C0 39.0198 11.035 50.0943 24.6478 50.0943C38.2605 50.0943 49.2955 39.0198 49.2955 25.3584C49.2955 11.697 38.2605 0.622559 24.6478 0.622559ZM30.4862 17.7161H26.7813C26.3423 17.7161 25.8545 18.2958 25.8545 19.0662V21.7511H30.4888L29.7878 25.58H25.8545V37.0744H21.4821V25.58H17.5153V21.7511H21.4821V19.4991C21.4821 16.268 23.7158 13.6424 26.7813 13.6424H30.4862V17.7161Z"
-                  fill="url(#paint0_linear_1788_1398)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_1788_1398"
-                    x1="0"
-                    y1="0.622559"
-                    x2="49.2955"
-                    y2="0.622558"
-                    gradientUnits="userSpaceOnUse"
+        <div
+          class="flex flex-wrap lg:flex-nowrap gap-6 justify-between pb-[40px] sm:pb-0"
+        >
+          <div class="w-[100%] max-w-[300px]">
+            <h1
+              class="text-[#D7D9DD] roboto-mono text-base sm:text-xl md:text-2xl leading-[150%]"
+            >
+              Stay in touch:
+            </h1>
+            <input
+              type="text"
+              placeholder="Email"
+              class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
+            />
+            <div class="flex items-center gap-x-5 mt-6">
+              <span class="group transition-all ease-in duration-300">
+                <a href="https://www.facebook.com/login/" target="_blank">
+                  <svg
+                    class="size-9 sm:size-12 group-hover:-translate-y-3 ransition-all ease-in duration-300"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="51"
+                    viewBox="0 0 50 51"
+                    fill="none"
                   >
-                    <stop stop-color="#FFA280" />
-                    <stop offset="1" stop-color="#8FD9D9" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </span>
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="51"
-                viewBox="0 0 50 51"
-                fill="none"
-              >
-                <path
-                  d="M25.3044 0.622559C11.6916 0.622559 0.656616 11.697 0.656616 25.3584C0.656616 39.0198 11.6916 50.0943 25.3044 50.0943C38.9171 50.0943 49.9521 39.0198 49.9521 25.3584C49.9521 11.697 38.9171 0.622559 25.3044 0.622559ZM19.2708 35.6109H14.2796V19.4914H19.2708V35.6109ZM16.7444 17.5125C15.168 17.5125 14.1487 16.3917 14.1487 15.0054C14.1487 13.5908 15.1988 12.5035 16.8086 12.5035C18.4184 12.5035 19.4043 13.5908 19.4351 15.0054C19.4351 16.3917 18.4184 17.5125 16.7444 17.5125ZM37.4999 35.6109H32.5087V26.6777C32.5087 24.5983 31.7847 23.1863 29.9797 23.1863C28.601 23.1863 27.782 24.1422 27.42 25.0621C27.2865 25.3893 27.2531 25.8531 27.2531 26.3143V35.6083H22.2594V24.6318C22.2594 22.6194 22.1952 20.9369 22.1284 19.4888H26.4649L26.6934 21.7279H26.7935C27.4508 20.6766 29.0606 19.1255 31.7539 19.1255C35.0377 19.1255 37.4999 21.3337 37.4999 26.0799V35.6109Z"
-                  fill="url(#paint0_linear_1788_1397)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_1788_1397"
-                    x1="0.656616"
-                    y1="0.622559"
-                    x2="49.9521"
-                    y2="0.622558"
-                    gradientUnits="userSpaceOnUse"
+                    <path
+                      d="M24.6478 0.622559C11.035 0.622559 0 11.697 0 25.3584C0 39.0198 11.035 50.0943 24.6478 50.0943C38.2605 50.0943 49.2955 39.0198 49.2955 25.3584C49.2955 11.697 38.2605 0.622559 24.6478 0.622559ZM30.4862 17.7161H26.7813C26.3423 17.7161 25.8545 18.2958 25.8545 19.0662V21.7511H30.4888L29.7878 25.58H25.8545V37.0744H21.4821V25.58H17.5153V21.7511H21.4821V19.4991C21.4821 16.268 23.7158 13.6424 26.7813 13.6424H30.4862V17.7161Z"
+                      fill="url(#paint0_linear_1788_1398)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_1788_1398"
+                        x1="0"
+                        y1="0.622559"
+                        x2="49.2955"
+                        y2="0.622558"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          class="group-hover:stop-[#8FD9D9] transiton-all duration-300 ease-in"
+                          stop-color="#FFA280"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="#8FD9D9"
+                          class="group-hover:stop-[#FFA280] transiton-all duration-300 ease-in"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+              </span>
+              <span class="group transition-all ease-in duration-300">
+                <a href="https://www.linkedin.com/login/in" target="_blank">
+                  <svg
+                    class="size-9 sm:size-12 group-hover:-translate-y-3 transition-all duration-300 ease-in"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="51"
+                    viewBox="0 0 50 51"
+                    fill="none"
                   >
-                    <stop stop-color="#FFA280" />
-                    <stop offset="1" stop-color="#8FD9D9" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </span>
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="51"
-                viewBox="0 0 50 51"
-                fill="none"
-              >
-                <path
-                  d="M32.6635 25.4341C32.6635 27.4842 31.852 29.4503 30.4076 30.9C28.9631 32.3496 27.0039 33.164 24.9611 33.164C22.9183 33.164 20.9592 32.3496 19.5147 30.9C18.0702 29.4503 17.2587 27.4842 17.2587 25.4341C17.2587 24.9935 17.3049 24.5632 17.3845 24.1458H14.6912V34.4446C14.6912 35.1609 15.2689 35.7407 15.9827 35.7407H33.9421C34.2842 35.74 34.612 35.6032 34.8537 35.3602C35.0953 35.1172 35.231 34.7879 35.231 34.4446V24.1458H32.5377C32.6173 24.5632 32.6635 24.9935 32.6635 25.4341ZM24.9611 30.5874C25.6356 30.5872 26.3035 30.4537 26.9266 30.1945C27.5497 29.9353 28.1158 29.5555 28.5926 29.0767C29.0694 28.598 29.4476 28.0296 29.7056 27.4042C29.9635 26.7787 30.0962 26.1084 30.0961 25.4315C30.0959 24.7546 29.9629 24.0844 29.7046 23.459C29.4463 22.8337 29.0679 22.2656 28.5908 21.787C28.1137 21.3085 27.5474 20.929 26.9242 20.6701C26.301 20.4112 25.633 20.278 24.9585 20.2782C23.5963 20.2786 22.29 20.822 21.3271 21.7889C20.3641 22.7558 19.8233 24.067 19.8236 25.4341C19.8239 26.8012 20.3654 28.1121 21.3289 29.0786C22.2923 30.045 23.5989 30.5877 24.9611 30.5874ZM31.1231 20.0231H34.2015C34.406 20.0231 34.6022 19.9418 34.747 19.7969C34.8919 19.652 34.9736 19.4554 34.9743 19.2501V16.1607C34.9743 15.955 34.8928 15.7578 34.7479 15.6123C34.603 15.4669 34.4064 15.3852 34.2015 15.3852H31.1231C30.9181 15.3852 30.7215 15.4669 30.5766 15.6123C30.4317 15.7578 30.3502 15.955 30.3502 16.1607V19.2501C30.3528 19.6753 30.6994 20.0231 31.1231 20.0231ZM24.9611 0.698242C18.4241 0.698242 12.1549 3.30433 7.53252 7.9432C2.91016 12.5821 0.313354 18.8737 0.313354 25.4341C0.313354 31.9944 2.91016 38.2861 7.53252 42.925C12.1549 47.5639 18.4241 50.1699 24.9611 50.1699C28.1979 50.1699 31.403 49.5301 34.3934 48.287C37.3838 47.0439 40.101 45.2219 42.3897 42.925C44.6785 40.628 46.494 37.9012 47.7327 34.9001C48.9713 31.899 49.6089 28.6824 49.6089 25.4341C49.6089 22.1857 48.9713 18.9692 47.7327 15.9681C46.494 12.967 44.6785 10.2401 42.3897 7.9432C40.101 5.64627 37.3838 3.82424 34.3934 2.58115C31.403 1.33805 28.1979 0.698242 24.9611 0.698242ZM37.7985 35.4547C37.7985 37.029 36.5148 38.3173 34.946 38.3173H14.9762C13.4075 38.3173 12.1237 37.029 12.1237 35.4547V15.4135C12.1237 13.8392 13.4075 12.5508 14.9762 12.5508H34.946C36.5148 12.5508 37.7985 13.8392 37.7985 15.4135V35.4547Z"
-                  fill="url(#paint0_linear_1788_1396)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_1788_1396"
-                    x1="0.313354"
-                    y1="0.698242"
-                    x2="49.6089"
-                    y2="0.698242"
-                    gradientUnits="userSpaceOnUse"
+                    <path
+                      d="M25.3044 0.622559C11.6916 0.622559 0.656616 11.697 0.656616 25.3584C0.656616 39.0198 11.6916 50.0943 25.3044 50.0943C38.9171 50.0943 49.9521 39.0198 49.9521 25.3584C49.9521 11.697 38.9171 0.622559 25.3044 0.622559ZM19.2708 35.6109H14.2796V19.4914H19.2708V35.6109ZM16.7444 17.5125C15.168 17.5125 14.1487 16.3917 14.1487 15.0054C14.1487 13.5908 15.1988 12.5035 16.8086 12.5035C18.4184 12.5035 19.4043 13.5908 19.4351 15.0054C19.4351 16.3917 18.4184 17.5125 16.7444 17.5125ZM37.4999 35.6109H32.5087V26.6777C32.5087 24.5983 31.7847 23.1863 29.9797 23.1863C28.601 23.1863 27.782 24.1422 27.42 25.0621C27.2865 25.3893 27.2531 25.8531 27.2531 26.3143V35.6083H22.2594V24.6318C22.2594 22.6194 22.1952 20.9369 22.1284 19.4888H26.4649L26.6934 21.7279H26.7935C27.4508 20.6766 29.0606 19.1255 31.7539 19.1255C35.0377 19.1255 37.4999 21.3337 37.4999 26.0799V35.6109Z"
+                      fill="url(#paint0_linear_1788_1397)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_1788_1397"
+                        x1="0.656616"
+                        y1="0.622559"
+                        x2="49.9521"
+                        y2="0.622558"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FFA280" />
+                        <stop offset="1" stop-color="#8FD9D9" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+              </span>
+              <span class="group transition-all ease-in duration-300">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <svg
+                    class="size-9 sm:size-12 group-hover:-translate-y-3 transition-all duration-300 ease-in"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="51"
+                    viewBox="0 0 50 51"
+                    fill="none"
                   >
-                    <stop stop-color="#FFA280" />
-                    <stop offset="1" stop-color="#8FD9D9" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </span>
+                    <path
+                      d="M32.6635 25.4341C32.6635 27.4842 31.852 29.4503 30.4076 30.9C28.9631 32.3496 27.0039 33.164 24.9611 33.164C22.9183 33.164 20.9592 32.3496 19.5147 30.9C18.0702 29.4503 17.2587 27.4842 17.2587 25.4341C17.2587 24.9935 17.3049 24.5632 17.3845 24.1458H14.6912V34.4446C14.6912 35.1609 15.2689 35.7407 15.9827 35.7407H33.9421C34.2842 35.74 34.612 35.6032 34.8537 35.3602C35.0953 35.1172 35.231 34.7879 35.231 34.4446V24.1458H32.5377C32.6173 24.5632 32.6635 24.9935 32.6635 25.4341ZM24.9611 30.5874C25.6356 30.5872 26.3035 30.4537 26.9266 30.1945C27.5497 29.9353 28.1158 29.5555 28.5926 29.0767C29.0694 28.598 29.4476 28.0296 29.7056 27.4042C29.9635 26.7787 30.0962 26.1084 30.0961 25.4315C30.0959 24.7546 29.9629 24.0844 29.7046 23.459C29.4463 22.8337 29.0679 22.2656 28.5908 21.787C28.1137 21.3085 27.5474 20.929 26.9242 20.6701C26.301 20.4112 25.633 20.278 24.9585 20.2782C23.5963 20.2786 22.29 20.822 21.3271 21.7889C20.3641 22.7558 19.8233 24.067 19.8236 25.4341C19.8239 26.8012 20.3654 28.1121 21.3289 29.0786C22.2923 30.045 23.5989 30.5877 24.9611 30.5874ZM31.1231 20.0231H34.2015C34.406 20.0231 34.6022 19.9418 34.747 19.7969C34.8919 19.652 34.9736 19.4554 34.9743 19.2501V16.1607C34.9743 15.955 34.8928 15.7578 34.7479 15.6123C34.603 15.4669 34.4064 15.3852 34.2015 15.3852H31.1231C30.9181 15.3852 30.7215 15.4669 30.5766 15.6123C30.4317 15.7578 30.3502 15.955 30.3502 16.1607V19.2501C30.3528 19.6753 30.6994 20.0231 31.1231 20.0231ZM24.9611 0.698242C18.4241 0.698242 12.1549 3.30433 7.53252 7.9432C2.91016 12.5821 0.313354 18.8737 0.313354 25.4341C0.313354 31.9944 2.91016 38.2861 7.53252 42.925C12.1549 47.5639 18.4241 50.1699 24.9611 50.1699C28.1979 50.1699 31.403 49.5301 34.3934 48.287C37.3838 47.0439 40.101 45.2219 42.3897 42.925C44.6785 40.628 46.494 37.9012 47.7327 34.9001C48.9713 31.899 49.6089 28.6824 49.6089 25.4341C49.6089 22.1857 48.9713 18.9692 47.7327 15.9681C46.494 12.967 44.6785 10.2401 42.3897 7.9432C40.101 5.64627 37.3838 3.82424 34.3934 2.58115C31.403 1.33805 28.1979 0.698242 24.9611 0.698242ZM37.7985 35.4547C37.7985 37.029 36.5148 38.3173 34.946 38.3173H14.9762C13.4075 38.3173 12.1237 37.029 12.1237 35.4547V15.4135C12.1237 13.8392 13.4075 12.5508 14.9762 12.5508H34.946C36.5148 12.5508 37.7985 13.8392 37.7985 15.4135V35.4547Z"
+                      fill="url(#paint0_linear_1788_1396)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_1788_1396"
+                        x1="0.313354"
+                        y1="0.698242"
+                        x2="49.6089"
+                        y2="0.698242"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FFA280" />
+                        <stop offset="1" stop-color="#8FD9D9" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="flex items-center">
-          <ul class="text-[#D7D9DD]">
-            <li class="roboto-mono text-2xl leading-[150%]">Services</li>
-            <li
-              class="text-lg leading-[144%] underline underline-offset-2 mt-7"
-            >
-              <a href="/" class="avanttTRIAL-Normal"> Preventive Care</a>
-            </li>
-            <li
-              class="text-lg leading-[144%] underline underline-offset-2 mt-2"
-            >
-              <a href="/" class="avanttTRIAL-Normal"> Sick Patient Care</a>
-            </li>
-            <li
-              class="text-lg leading-[144%] underline underline-offset-2 mt-2"
-            >
-              <a href="/" class="avanttTRIAL-Normal"> Surgery</a>
-            </li>
-            <li
-              class="text-lg leading-[144%] underline underline-offset-2 mt-2"
-            >
-              <a href="/" class="avanttTRIAL-Normal"> Additional Services</a>
-            </li>
-          </ul>
-          <ul class="text-[#D7D9DD]">
-            <li class="roboto-mono text-2xl leading-[150%]">Company</li>
-            <li
-              class="text-lg leading-[144%] underline underline-offset-2 mt-7"
-            >
-              <a href="/" class="avanttTRIAL-Normal"> About us</a>
-            </li>
-            <li
-              class="text-lg leading-[144%] underline underline-offset-2 mt-2"
-            >
-              <a href="/" class="avanttTRIAL-Normal"> Carreers</a>
-            </li>
-          </ul>
-          <ul class="text-[#D7D9DD]">
-            <li class="roboto-mono text-2xl leading-[150%]">Contact Us</li>
-            <li
-              class="text-lg leading-[144%] underline underline-offset-2 mt-7"
-            >
-              <a href="tel: +1(212) 123-4567" class="avanttTRIAL-Normal">
-                Phone: (212) 123-4567</a
+
+          <div>
+            <ul class="text-[#D7D9DD]">
+              <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
+                Services
+              </li>
+              <li
+                class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-            </li>
-            <li
-              class="text-lg leading-[144%] underline underline-offset-2 mt-2"
-            >
-              <a href="mailto: hello@nebulavets.com" class="avanttTRIAL-Normal">
-                hello@nebulavets.com
-              </a>
-            </li>
-          </ul>
+                <a href="/" class="avanttTRIAL-Normal"> Preventive Care</a>
+              </li>
+              <li
+                class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+              >
+                <a href="/" class="avanttTRIAL-Normal"> Sick Patient Care</a>
+              </li>
+              <li
+                class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+              >
+                <a href="/" class="avanttTRIAL-Normal"> Surgery</a>
+              </li>
+              <li
+                class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+              >
+                <a href="/" class="avanttTRIAL-Normal"> Additional Services</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="text-[#D7D9DD]">
+              <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
+                Company
+              </li>
+              <li
+                class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+              >
+                <a href="/" class="avanttTRIAL-Normal"> About us</a>
+              </li>
+              <li
+                class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+              >
+                <a href="/" class="avanttTRIAL-Normal"> Carreers</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="text-[#D7D9DD]">
+              <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
+                Contact Us
+              </li>
+              <li
+                class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+              >
+                <a href="tel: +1(212) 123-4567" class="avanttTRIAL-Normal">
+                  Phone: (212) 123-4567</a
+                >
+              </li>
+              <li
+                class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+              >
+                <a
+                  href="mailto: hello@nebulavets.com"
+                  class="avanttTRIAL-Normal"
+                >
+                  hello@nebulavets.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -856,7 +945,7 @@
         },
         breakpoints: {
           0: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.4,
             spaceBetween: 10,
           },
           640: {
@@ -891,11 +980,11 @@
         if (content.classList.contains("hidden")) {
           content.classList.remove("hidden");
           content.classList.add("block");
-          icon.classList.add("rotate-180");
+          icon.classList.add("rotate-30");
         } else {
           content.classList.remove("block");
           content.classList.add("hidden");
-          icon.classList.remove("rotate-180");
+          icon.classList.remove("rotate-30");
         }
       }
     </script>

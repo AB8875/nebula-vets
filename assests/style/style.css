@@ -4,6 +4,12 @@
 .swiper-pagination-bullet-active {
   background: #494336 !important;
 }
+.swiper-pagination.second .swiper-pagination-bullet-active {
+  background: var(
+    --Gradient-02,
+    linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%)
+  ) !important;
+}
 
 .swiper {
   width: 100%;
