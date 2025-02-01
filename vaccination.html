@@ -16,7 +16,7 @@
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
       <section>
-        <div>
+        <nav class="bg-[#494336]">
           <div
             class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-7"
           >
@@ -33,61 +33,62 @@
                 </a>
               </div>
               <div class="block md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="49"
-                  height="27"
-                  viewBox="0 0 49 27"
-                  fill="none"
-                >
-                  <path
-                    d="M0.0338135 22.5562H48.0338V26.1812H0.0338135V22.5562Z"
-                    fill="#D8DADC"
-                  />
-                  <path
-                    d="M0.0338135 0.806152H48.0338V4.43115H0.0338135V0.806152Z"
-                    fill="#D8DADC"
-                  />
-                  <path
-                    d="M0.0338135 11.6812H48.0338V15.3062H0.0338135V11.6812Z"
-                    fill="#D8DADC"
-                  />
-                </svg>
+                <button id="menuBtn">
+                  <svg
+                    width="49"
+                    height="27"
+                    viewBox="0 0 49 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.0338135 22.5562H48.0338V26.1812H0.0338135V22.5562Z"
+                      fill="#D8DADC"
+                    />
+                    <path
+                      d="M0.0338135 0.806152H48.0338V4.43115H0.0338135V0.806152Z"
+                      fill="#D8DADC"
+                    />
+                    <path
+                      d="M0.0338135 11.6812H48.0338V15.3062H0.0338135V11.6812Z"
+                      fill="#D8DADC"
+                    />
+                  </svg>
+                </button>
               </div>
               <div
-                class="flex flex-wrap justify-center md:flex-row items-center gap-3 md:gap-5 lg:gap-15 hidden md:flex"
+                class="flex flex-wrap justify-center md:flex-row items-center gap-3 lg:gap-10 xl:gap-14 hidden md:flex"
               >
-                <div>
-                  <ul
-                    class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex justify-center items-center gap-4 md:gap-5 lg:gap-10"
+                <ul
+                  class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex justify-center items-center gap-4 md:gap-5 lg:gap-10 xl:gap-16"
+                >
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
                   >
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="./veterinary-services.html">SERVICES</a>
-                    </li>
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="/"> ABOUT US</a>
-                    </li>
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="/">LOCATION</a>
-                    </li>
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="/">CAREER</a>
-                    </li>
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="/">PATIENT PORTAL</a>
-                    </li>
-                  </ul>
-                </div>
+                    <a href="./veterinary-services.html">SERVICES</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="/"> ABOUT US</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="/">LOCATION</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="/">CAREER</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="/">PATIENT PORTAL</a>
+                  </li>
+                </ul>
+
                 <div class="mt-4 md:mt-0 group">
                   <a
                     href="/"
@@ -97,8 +98,46 @@
                 </div>
               </div>
             </div>
+            <!-- Sidebar -->
+            <div
+              id="sidebar"
+              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col"
+            >
+              <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
+                &times;
+              </button>
+              <ul
+                class="mt-5 space-y-10 *:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px]"
+              >
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="./veterinary-services.html">SERVICES</a>
+                </li>
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="/"> ABOUT US</a>
+                </li>
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="/">LOCATION</a>
+                </li>
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="/">CAREER</a>
+                </li>
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="/">PATIENT PORTAL</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </nav>
       </section>
       <!-- HERO-SECTION -->
       <section class="overflow-hidden">
@@ -292,546 +331,552 @@
       </div>
     </section>
     <!-- WHEN VACCINATE -->
-    <div class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
-      <h1
-        class="text-[#494336] avanttTRIAL-Normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
-      >
-        When to vaccinate?
-      </h1>
-      <!-- SWIPER -->
-      <!-- first swiper -->
-      <div class="swiper mySwiper sm:hidden mt-10">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[300px] mx-auto"
-            >
-              <div class="flex items-center gap-5">
-                <span>
-                  <img src="./assests/img/horse-sign.png" alt="horse-sign" />
-                </span>
-                <h1
-                  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-                >
-                  Puppies Schedule
-                </h1>
+    <section>
+      <div class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
+        <h1
+          class="text-[#494336] avanttTRIAL-Normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+        >
+          When to vaccinate?
+        </h1>
+        <!-- SWIPER -->
+        <!-- first swiper -->
+        <div class="swiper mySwiper sm:hidden mt-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[300px] mx-auto"
+              >
+                <div class="flex items-center gap-5">
+                  <span>
+                    <img src="./assests/img/horse-sign.png" alt="horse-sign" />
+                  </span>
+                  <h1
+                    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+                  >
+                    Puppies Schedule
+                  </h1>
+                </div>
+                <div class="max-w-[250px] mt-10">
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+                  >
+                    8 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                    vaccine & Canine Influenza Virus vaccine
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
+                  >
+                    12 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                    vaccine & Canine Influenza Virus vaccine
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
+                  >
+                    Booster:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Once a year
+                  </p>
+                </div>
               </div>
-              <div class="max-w-[250px] mt-10">
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-                >
-                  8 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                  vaccine & Canine Influenza Virus vaccine
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
-                >
-                  12 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                  vaccine & Canine Influenza Virus vaccine
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
-                >
-                  Booster:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Once a year
-                </p>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[300px] mx-auto"
+              >
+                <div class="flex items-center gap-5">
+                  <span>
+                    <img src="./assests/img/horse-sign.png" alt="horse-sign" />
+                  </span>
+                  <h1
+                    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+                  >
+                    Puppies Schedule
+                  </h1>
+                </div>
+                <div class="max-w-[250px] mt-10">
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+                  >
+                    8 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                    vaccine & Canine Influenza Virus vaccine
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
+                  >
+                    12 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                    vaccine & Canine Influenza Virus vaccine
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
+                  >
+                    Booster:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Once a year
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[300px] mx-auto"
+              >
+                <div class="flex items-center gap-5">
+                  <span>
+                    <img src="./assests/img/horse-sign.png" alt="horse-sign" />
+                  </span>
+                  <h1
+                    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+                  >
+                    Puppies Schedule
+                  </h1>
+                </div>
+                <div class="max-w-[250px] mt-10">
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+                  >
+                    8 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                    vaccine & Canine Influenza Virus vaccine
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
+                  >
+                    12 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                    vaccine & Canine Influenza Virus vaccine
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
+                  >
+                    Booster:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Once a year
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[300px] mx-auto"
+              >
+                <div class="flex items-center gap-5">
+                  <span>
+                    <img src="./assests/img/horse-sign.png" alt="horse-sign" />
+                  </span>
+                  <h1
+                    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+                  >
+                    Puppies Schedule
+                  </h1>
+                </div>
+                <div class="max-w-[250px] mt-10">
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+                  >
+                    8 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                    vaccine & Canine Influenza Virus vaccine
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
+                  >
+                    12 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                    vaccine & Canine Influenza Virus vaccine
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
+                  >
+                    Booster:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    Once a year
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[300px] mx-auto"
-            >
-              <div class="flex items-center gap-5">
-                <span>
-                  <img src="./assests/img/horse-sign.png" alt="horse-sign" />
-                </span>
-                <h1
-                  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-                >
-                  Puppies Schedule
-                </h1>
+
+          <div
+            class="swiper-pagination vac-first !relative !bottom-[-6px]"
+          ></div>
+        </div>
+        <!-- second swiper -->
+
+        <div class="swiper mySwiper2 sm:hidden mt-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[290px] mt-4 mx-auto"
+              >
+                <div class="flex items-center gap-5">
+                  <span>
+                    <img src="./assests/img/kitten.png" alt="kitte" />
+                  </span>
+                  <h1
+                    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+                  >
+                    Kitten Schedule
+                  </h1>
+                </div>
+                <div class="max-w-[250px] mt-10">
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+                  >
+                    8 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    FVRCP vaccine and Leukemia vaccines
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-6"
+                  >
+                    12 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    FVRCP vaccine, Leukemia vaccine& Rabies vaccine
+                  </p>
+                </div>
               </div>
-              <div class="max-w-[250px] mt-10">
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-                >
-                  8 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                  vaccine & Canine Influenza Virus vaccine
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
-                >
-                  12 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                  vaccine & Canine Influenza Virus vaccine
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
-                >
-                  Booster:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Once a year
-                </p>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[290px] mt-4 mx-auto"
+              >
+                <div class="flex items-center gap-5">
+                  <span>
+                    <img src="./assests/img/kitten.png" alt="kitte" />
+                  </span>
+                  <h1
+                    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+                  >
+                    Kitten Schedule
+                  </h1>
+                </div>
+                <div class="max-w-[250px] mt-10">
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+                  >
+                    8 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    FVRCP vaccine and Leukemia vaccines
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-6"
+                  >
+                    12 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    FVRCP vaccine, Leukemia vaccine& Rabies vaccine
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[290px] mt-4 mx-auto"
+              >
+                <div class="flex items-center gap-5">
+                  <span>
+                    <img src="./assests/img/kitten.png" alt="kitte" />
+                  </span>
+                  <h1
+                    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+                  >
+                    Kitten Schedule
+                  </h1>
+                </div>
+                <div class="max-w-[250px] mt-10">
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+                  >
+                    8 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    FVRCP vaccine and Leukemia vaccines
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-6"
+                  >
+                    12 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    FVRCP vaccine, Leukemia vaccine& Rabies vaccine
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[290px] mt-4 mx-auto"
+              >
+                <div class="flex items-center gap-5">
+                  <span>
+                    <img src="./assests/img/kitten.png" alt="kitte" />
+                  </span>
+                  <h1
+                    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+                  >
+                    Kitten Schedule
+                  </h1>
+                </div>
+                <div class="max-w-[250px] mt-10">
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+                  >
+                    8 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    FVRCP vaccine and Leukemia vaccines
+                  </p>
+                  <h1
+                    class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-6"
+                  >
+                    12 weeks:
+                  </h1>
+                  <p
+                    class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+                  >
+                    FVRCP vaccine, Leukemia vaccine& Rabies vaccine
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[300px] mx-auto"
-            >
-              <div class="flex items-center gap-5">
-                <span>
-                  <img src="./assests/img/horse-sign.png" alt="horse-sign" />
-                </span>
-                <h1
-                  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-                >
-                  Puppies Schedule
-                </h1>
-              </div>
-              <div class="max-w-[250px] mt-10">
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-                >
-                  8 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                  vaccine & Canine Influenza Virus vaccine
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
-                >
-                  12 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                  vaccine & Canine Influenza Virus vaccine
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
-                >
-                  Booster:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Once a year
-                </p>
-              </div>
+
+          <div
+            class="swiper-pagination vac-first !relative !bottom-[-6px]"
+          ></div>
+        </div>
+        <div
+          class="mt-10 flex flex-wrap justify-center lg:justify-between hidden sm:flex"
+        >
+          <!-- first -->
+          <div class="bg-[#494336] pt-9 ps-12 pe-5 pb-[50px] w-[547px] mt-4">
+            <div class="flex items-center gap-5">
+              <span>
+                <img src="./assests/img/horse-sign.png" alt="horse-sign" />
+              </span>
+              <h1
+                class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+              >
+                Puppies Schedule
+              </h1>
+            </div>
+            <div class="max-w-[408px] mt-10">
+              <h1
+                class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+              >
+                8 weeks:
+              </h1>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                vaccine & Canine Influenza Virus vaccine
+              </p>
+              <h1
+                class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+              >
+                12 weeks:
+              </h1>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                vaccine & Canine Influenza Virus vaccine
+              </p>
+              <h1
+                class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+              >
+                Booster:
+              </h1>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Once a year
+              </p>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[300px] mx-auto"
-            >
-              <div class="flex items-center gap-5">
-                <span>
-                  <img src="./assests/img/horse-sign.png" alt="horse-sign" />
-                </span>
-                <h1
-                  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-                >
-                  Puppies Schedule
-                </h1>
-              </div>
-              <div class="max-w-[250px] mt-10">
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-                >
-                  8 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                  vaccine & Canine Influenza Virus vaccine
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
-                >
-                  12 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                  vaccine & Canine Influenza Virus vaccine
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-8"
-                >
-                  Booster:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  Once a year
-                </p>
-              </div>
+          <!-- second -->
+          <div class="bg-[#494336] pt-9 ps-12 pe-5 pb-[50px] w-[547px] mt-4">
+            <div class="flex items-center gap-5">
+              <span>
+                <img src="./assests/img/kitten.png" alt="kitte" />
+              </span>
+              <h1
+                class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+              >
+                Kitten Schedule
+              </h1>
+            </div>
+            <div class="max-w-[408px] mt-10">
+              <h1
+                class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+              >
+                8 weeks:
+              </h1>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                FVRCP vaccine and Leukemia vaccines
+              </p>
+              <h1
+                class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
+              >
+                12 weeks:
+              </h1>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                FVRCP vaccine, Leukemia vaccine& Rabies vaccine
+              </p>
+            </div>
+          </div>
+          <!-- third -->
+          <div class="bg-[#494336] pt-9 ps-12 pe-5 pb-[50px] w-[547px] mt-4">
+            <div class="flex items-center gap-5">
+              <span>
+                <img src="./assests/img/horse-sign.png" alt="horse-sign" />
+              </span>
+              <h1
+                class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+              >
+                Adult Dog Schedule
+              </h1>
+            </div>
+            <div class="max-w-[408px] mt-10">
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Rabies: One year after the initial puppy vaccine, then every
+                three years
+              </p>
+
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Distemper: Every three years
+              </p>
+
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Bordetella: Every year
+              </p>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Leptospirosis: Every year
+              </p>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Influenza: Every year
+              </p>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Lyme disease: Every year
+              </p>
+            </div>
+          </div>
+          <!-- forth -->
+          <div class="bg-[#494336] pt-9 ps-12 pe-5 pb-[50px] w-[547px] mt-4">
+            <div class="flex items-center gap-5">
+              <span>
+                <img src="./assests/img/kitten.png" alt="kitte" />
+              </span>
+              <h1
+                class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
+              >
+                Adult Cat Schedule
+              </h1>
+            </div>
+            <div class="max-w-[408px] mt-10">
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                FVRCP: Every year
+              </p>
+
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Rabies: Every three years
+              </p>
+              <p
+                class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
+              >
+                Feline Leukemia Virus: Every year
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="swiper-pagination vac-first !relative !bottom-[-6px]"></div>
       </div>
-      <!-- second swiper -->
-
-      <div class="swiper mySwiper2 sm:hidden mt-10">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[290px] mt-4 mx-auto"
-            >
-              <div class="flex items-center gap-5">
-                <span>
-                  <img src="./assests/img/kitten.png" alt="kitte" />
-                </span>
-                <h1
-                  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-                >
-                  Kitten Schedule
-                </h1>
-              </div>
-              <div class="max-w-[250px] mt-10">
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-                >
-                  8 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  FVRCP vaccine and Leukemia vaccines
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-6"
-                >
-                  12 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  FVRCP vaccine, Leukemia vaccine& Rabies vaccine
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[290px] mt-4 mx-auto"
-            >
-              <div class="flex items-center gap-5">
-                <span>
-                  <img src="./assests/img/kitten.png" alt="kitte" />
-                </span>
-                <h1
-                  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-                >
-                  Kitten Schedule
-                </h1>
-              </div>
-              <div class="max-w-[250px] mt-10">
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-                >
-                  8 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  FVRCP vaccine and Leukemia vaccines
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-6"
-                >
-                  12 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  FVRCP vaccine, Leukemia vaccine& Rabies vaccine
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[290px] mt-4 mx-auto"
-            >
-              <div class="flex items-center gap-5">
-                <span>
-                  <img src="./assests/img/kitten.png" alt="kitte" />
-                </span>
-                <h1
-                  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-                >
-                  Kitten Schedule
-                </h1>
-              </div>
-              <div class="max-w-[250px] mt-10">
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-                >
-                  8 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  FVRCP vaccine and Leukemia vaccines
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-6"
-                >
-                  12 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  FVRCP vaccine, Leukemia vaccine& Rabies vaccine
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] pt-9 ps-6 pe-4 pb-[50px] max-w-[290px] mt-4 mx-auto"
-            >
-              <div class="flex items-center gap-5">
-                <span>
-                  <img src="./assests/img/kitten.png" alt="kitte" />
-                </span>
-                <h1
-                  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-                >
-                  Kitten Schedule
-                </h1>
-              </div>
-              <div class="max-w-[250px] mt-10">
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-                >
-                  8 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  FVRCP vaccine and Leukemia vaccines
-                </p>
-                <h1
-                  class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono mt-6"
-                >
-                  12 weeks:
-                </h1>
-                <p
-                  class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-                >
-                  FVRCP vaccine, Leukemia vaccine& Rabies vaccine
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-pagination vac-first !relative !bottom-[-6px]"></div>
-      </div>
-      <div
-        class="mt-10 flex flex-wrap justify-center lg:justify-between hidden sm:flex"
-      >
-        <!-- first -->
-        <div class="bg-[#494336] pt-9 ps-12 pe-5 pb-[50px] w-[547px] mt-4">
-          <div class="flex items-center gap-5">
-            <span>
-              <img src="./assests/img/horse-sign.png" alt="horse-sign" />
-            </span>
-            <h1
-              class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-            >
-              Puppies Schedule
-            </h1>
-          </div>
-          <div class="max-w-[408px] mt-10">
-            <h1
-              class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-            >
-              8 weeks:
-            </h1>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme vaccine
-              & Canine Influenza Virus vaccine
-            </p>
-            <h1
-              class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-            >
-              12 weeks:
-            </h1>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme vaccine
-              & Canine Influenza Virus vaccine
-            </p>
-            <h1
-              class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-            >
-              Booster:
-            </h1>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Once a year
-            </p>
-          </div>
-        </div>
-        <!-- second -->
-        <div class="bg-[#494336] pt-9 ps-12 pe-5 pb-[50px] w-[547px] mt-4">
-          <div class="flex items-center gap-5">
-            <span>
-              <img src="./assests/img/kitten.png" alt="kitte" />
-            </span>
-            <h1
-              class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-            >
-              Kitten Schedule
-            </h1>
-          </div>
-          <div class="max-w-[408px] mt-10">
-            <h1
-              class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-            >
-              8 weeks:
-            </h1>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              FVRCP vaccine and Leukemia vaccines
-            </p>
-            <h1
-              class="text-[#D7D9DD] text-base sm:text-lg md:text-xl xl:text-2xl roboto-mono"
-            >
-              12 weeks:
-            </h1>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              FVRCP vaccine, Leukemia vaccine& Rabies vaccine
-            </p>
-          </div>
-        </div>
-        <!-- third -->
-        <div class="bg-[#494336] pt-9 ps-12 pe-5 pb-[50px] w-[547px] mt-4">
-          <div class="flex items-center gap-5">
-            <span>
-              <img src="./assests/img/horse-sign.png" alt="horse-sign" />
-            </span>
-            <h1
-              class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-            >
-              Adult Dog Schedule
-            </h1>
-          </div>
-          <div class="max-w-[408px] mt-10">
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Rabies: One year after the initial puppy vaccine, then every three
-              years
-            </p>
-
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Distemper: Every three years
-            </p>
-
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Bordetella: Every year
-            </p>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Leptospirosis: Every year
-            </p>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Influenza: Every year
-            </p>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Lyme disease: Every year
-            </p>
-          </div>
-        </div>
-        <!-- forth -->
-        <div class="bg-[#494336] pt-9 ps-12 pe-5 pb-[50px] w-[547px] mt-4">
-          <div class="flex items-center gap-5">
-            <span>
-              <img src="./assests/img/kitten.png" alt="kitte" />
-            </span>
-            <h1
-              class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl avanttTRIAL-Normal bg-[linear-gradient(180deg,#FFA280_0%,#8FD9CB_100%)] bg-clip-text text-transparent"
-            >
-              Adult Cat Schedule
-            </h1>
-          </div>
-          <div class="max-w-[408px] mt-10">
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              FVRCP: Every year
-            </p>
-
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Rabies: Every three years
-            </p>
-            <p
-              class="avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] text-[#D7D9DD]"
-            >
-              Feline Leukemia Virus: Every year
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
     <!-- FOOTER -->
     <section class="bg-[#494336] overflow-hidden mt-16">
       <div
@@ -1152,6 +1197,16 @@
           },
         },
       });
+    </script>
+    <script>
+      document.getElementById("menuBtn").addEventListener("click", function () {
+        document.getElementById("sidebar").style.right = "0";
+      });
+      document
+        .getElementById("closeBtn")
+        .addEventListener("click", function () {
+          document.getElementById("sidebar").style.right = "-100%";
+        });
     </script>
   </body>
 </html>

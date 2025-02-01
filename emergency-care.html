@@ -12,7 +12,7 @@
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
       <section>
-        <div>
+        <nav class="bg-[#494336]">
           <div
             class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-7"
           >
@@ -29,61 +29,62 @@
                 </a>
               </div>
               <div class="block md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="49"
-                  height="27"
-                  viewBox="0 0 49 27"
-                  fill="none"
-                >
-                  <path
-                    d="M0.0338135 22.5562H48.0338V26.1812H0.0338135V22.5562Z"
-                    fill="#D8DADC"
-                  />
-                  <path
-                    d="M0.0338135 0.806152H48.0338V4.43115H0.0338135V0.806152Z"
-                    fill="#D8DADC"
-                  />
-                  <path
-                    d="M0.0338135 11.6812H48.0338V15.3062H0.0338135V11.6812Z"
-                    fill="#D8DADC"
-                  />
-                </svg>
+                <button id="menuBtn">
+                  <svg
+                    width="49"
+                    height="27"
+                    viewBox="0 0 49 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.0338135 22.5562H48.0338V26.1812H0.0338135V22.5562Z"
+                      fill="#D8DADC"
+                    />
+                    <path
+                      d="M0.0338135 0.806152H48.0338V4.43115H0.0338135V0.806152Z"
+                      fill="#D8DADC"
+                    />
+                    <path
+                      d="M0.0338135 11.6812H48.0338V15.3062H0.0338135V11.6812Z"
+                      fill="#D8DADC"
+                    />
+                  </svg>
+                </button>
               </div>
               <div
-                class="flex flex-wrap justify-center md:flex-row items-center gap-3 md:gap-5 lg:gap-15 hidden md:flex"
+                class="flex flex-wrap justify-center md:flex-row items-center gap-3 lg:gap-10 xl:gap-14 hidden md:flex"
               >
-                <div>
-                  <ul
-                    class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex justify-center items-center gap-4 md:gap-5 lg:gap-10"
+                <ul
+                  class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex justify-center items-center gap-4 md:gap-5 lg:gap-10 xl:gap-16"
+                >
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
                   >
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="./veterinary-services.html">SERVICES</a>
-                    </li>
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="/"> ABOUT US</a>
-                    </li>
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="/">LOCATION</a>
-                    </li>
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="/">CAREER</a>
-                    </li>
-                    <li
-                      class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                    >
-                      <a href="/">PATIENT PORTAL</a>
-                    </li>
-                  </ul>
-                </div>
+                    <a href="./veterinary-services.html">SERVICES</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="/"> ABOUT US</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="/">LOCATION</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="/">CAREER</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="/">PATIENT PORTAL</a>
+                  </li>
+                </ul>
+
                 <div class="mt-4 md:mt-0 group">
                   <a
                     href="/"
@@ -93,8 +94,46 @@
                 </div>
               </div>
             </div>
+            <!-- Sidebar -->
+            <div
+              id="sidebar"
+              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col"
+            >
+              <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
+                &times;
+              </button>
+              <ul
+                class="mt-5 space-y-10 *:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px]"
+              >
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="./veterinary-services.html">SERVICES</a>
+                </li>
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="/"> ABOUT US</a>
+                </li>
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="/">LOCATION</a>
+                </li>
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="/">CAREER</a>
+                </li>
+                <li
+                  class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                >
+                  <a href="/">PATIENT PORTAL</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </nav>
       </section>
       <!-- HERO-SECTION -->
       <section class="overflow-hidden">
@@ -738,6 +777,17 @@
           icon.classList.remove("rotate-45");
         }
       }
+    </script>
+    <!-- navbar -->
+    <script>
+      document.getElementById("menuBtn").addEventListener("click", function () {
+        document.getElementById("sidebar").style.right = "0";
+      });
+      document
+        .getElementById("closeBtn")
+        .addEventListener("click", function () {
+          document.getElementById("sidebar").style.right = "-100%";
+        });
     </script>
   </body>
 </html>
