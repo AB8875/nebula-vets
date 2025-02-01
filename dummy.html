@@ -1,0 +1,29 @@
+<!-- navbar -->
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("closeBtn");
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+  const body = document.body;
+</script>
+<script>
+  function openSidebar() {
+    sidebar.style.right = "0";
+    overlay.classList.remove("hidden");
+    body.style.overflow = "hidden";
+  }
+</script>
+<script>
+  function closeSidebar() {
+    sidebar.style.right = "-100%";
+    overlay.classList.add("hidden");
+    body.style.overflow = "";
+  }
+</script>
+<script>
+  menuBtn.addEventListener("click", openSidebar);
+  closeBtn.addEventListener("click", closeSidebar);
+  overlay.addEventListener("click", closeSidebar);
+</script>
+
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden"></div>

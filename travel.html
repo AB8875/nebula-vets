@@ -96,6 +96,11 @@
             </div>
             <!-- Sidebar -->
             <div
+              id="overlay"
+              class="fixed inset-0 bg-black bg-opacity-50 hidden"
+            ></div>
+
+            <div
               id="sidebar"
               class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
             >
@@ -497,16 +502,32 @@
         </div>
       </div>
     </section>
-    <!-- js -->
+    <!-- navbar -->
     <script>
-      document.getElementById("menuBtn").addEventListener("click", function () {
-        document.getElementById("sidebar").style.right = "0";
-      });
-      document
-        .getElementById("closeBtn")
-        .addEventListener("click", function () {
-          document.getElementById("sidebar").style.right = "-100%";
-        });
+      const menuBtn = document.getElementById("menuBtn");
+      const closeBtn = document.getElementById("closeBtn");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      const body = document.body;
+    </script>
+    <script>
+      function openSidebar() {
+        sidebar.style.right = "0";
+        overlay.classList.remove("hidden");
+        body.style.overflow = "hidden";
+      }
+    </script>
+    <script>
+      function closeSidebar() {
+        sidebar.style.right = "-100%";
+        overlay.classList.add("hidden");
+        body.style.overflow = "";
+      }
+    </script>
+    <script>
+      menuBtn.addEventListener("click", openSidebar);
+      closeBtn.addEventListener("click", closeSidebar);
+      overlay.addEventListener("click", closeSidebar);
     </script>
   </body>
 </html>
