@@ -11,53 +11,113 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="shortcut icon"
+      href="./assests/img/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- NAV BAR -->
     <div class="relative overflow-hidden">
-      <nav class="bg-[#494336]">
-        <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-7">
+      <section>
+        <nav class="bg-[#494336]">
           <div
-            class="flex flex-wrap md:flex-row items-center justify-between gap-y-4 md:gap-y-0"
+            class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
-            <div>
-              <a href="/">
-                <img
-                  class="max-w-[90px] sm:max-w-[120px]"
-                  src="./assests/img/logo.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
-            <div class="block md:hidden">
-              <button id="menuBtn">
-                <svg
-                  width="49"
-                  height="27"
-                  viewBox="0 0 49 27"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.0338135 22.5562H48.0338V26.1812H0.0338135V22.5562Z"
-                    fill="#D8DADC"
-                  />
-                  <path
-                    d="M0.0338135 0.806152H48.0338V4.43115H0.0338135V0.806152Z"
-                    fill="#D8DADC"
-                  />
-                  <path
-                    d="M0.0338135 11.6812H48.0338V15.3062H0.0338135V11.6812Z"
-                    fill="#D8DADC"
-                  />
-                </svg>
-              </button>
-            </div>
             <div
-              class="flex flex-wrap justify-center md:flex-row items-center gap-3 lg:gap-10 xl:gap-14 hidden md:flex"
+              class="flex flex-wrap md:flex-row items-center justify-between"
             >
+              <div>
+                <a href="/">
+                  <img
+                    class="max-w-[85px] lg:max-w-[120px]"
+                    src="./assests/img/logo.png"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+              <div class="block md:hidden">
+                <button id="menuBtn">
+                  <svg
+                    width="49"
+                    height="27"
+                    viewBox="0 0 49 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.0338135 22.5562H48.0338V26.1812H0.0338135V22.5562Z"
+                      fill="#D8DADC"
+                    />
+                    <path
+                      d="M0.0338135 0.806152H48.0338V4.43115H0.0338135V0.806152Z"
+                      fill="#D8DADC"
+                    />
+                    <path
+                      d="M0.0338135 11.6812H48.0338V15.3062H0.0338135V11.6812Z"
+                      fill="#D8DADC"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="flex flex-wrap justify-center md:flex-row items-center gap-3 lg:gap-10 xl:gap-14 hidden md:flex"
+              >
+                <ul
+                  class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex items-center gap-3 md:gap-3 lg:gap-10 xl:gap-16"
+                >
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="./veterinary-services.html">SERVICES</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="./about-nebula-vets.html"> ABOUT US</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="./dc-practice.html">LOCATION</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="./join-team.html">CAREER</a>
+                  </li>
+                  <li
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                  >
+                    <a href="./emergency-care.html">PATIENT PORTAL</a>
+                  </li>
+                </ul>
+
+                <div class="mt-4 md:mt-0 group flex">
+                  <a
+                    href="/"
+                    class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] sm:py-3 px-5 lg:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
+                    >BOOK NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Sidebar -->
+            <div
+              id="overlay"
+              class="fixed inset-0 bg-black bg-opacity-50 hidden"
+            ></div>
+
+            <div
+              id="sidebar"
+              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
+            >
+              <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
+                &times;
+              </button>
               <ul
-                class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex justify-center items-center gap-4 md:gap-5 lg:gap-10 xl:gap-16"
+                class="mt-5 space-y-10 *:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px]"
               >
                 <li
                   class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
@@ -82,70 +142,20 @@
                 <li
                   class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
                 >
-                  <a href="./Hospice-Euthanasia.html">PATIENT PORTAL</a>
+                  <a href="./animal-health-check.html">PATIENT PORTAL</a>
+                </li>
+                <li class="flex">
+                  <a
+                    href="/"
+                    class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
+                    >BOOK NOW</a
+                  >
                 </li>
               </ul>
-
-              <div class="mt-4 md:mt-0 group">
-                <a
-                  href="/"
-                  class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
-                  >BOOK NOW</a
-                >
-              </div>
             </div>
           </div>
-          <!-- Sidebar -->
-          <div
-            id="overlay"
-            class="fixed inset-0 bg-black bg-opacity-50 hidden"
-          ></div>
-          <div
-            id="sidebar"
-            class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
-          >
-            <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
-              &times;
-            </button>
-            <ul
-              class="mt-5 space-y-10 *:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px]"
-            >
-              <li
-                class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-              >
-                <a href="./veterinary-services.html">SERVICES</a>
-              </li>
-              <li
-                class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-              >
-                <a href="./about-nebula-vets.html"> ABOUT US</a>
-              </li>
-              <li
-                class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-              >
-                <a href="./dc-practice.html">LOCATION</a>
-              </li>
-              <li
-                class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-              >
-                <a href="./join-team.html">CAREER</a>
-              </li>
-              <li
-                class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-              >
-                <a href="./Hospice-Euthanasia.html">PATIENT PORTAL</a>
-              </li>
-              <li class="flex">
-                <a
-                  href="/"
-                  class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
-                  >BOOK NOW</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </section>
       <!-- HERO SECTION -->
       <section class="relative">
         <div
@@ -153,7 +163,7 @@
         >
           <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
             <div
-              class="absolute top-[-100%] sm:top-[20%] left-[7%] sm:left-[14%]"
+              class="absolute top-[-100%] sm:top-[20%] 2xl:!left-[24%] sm:left-[12%]"
             >
               <h1
                 class="text-[#494336] sm:text-[#D7D9DD] avanttTRIAL-Regular text-[35px] sm:text-[40px] md:text-[47px] lg:text-[52px] xl:text-[70px] max-w-[250px] sm:max-w-[511px]"
@@ -168,12 +178,12 @@
               <div class="mt-11 group">
                 <a
                   href="/"
-                  class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-[5px] sm:py-3 px-5 sm:px-9 border-1 group-hover:rounded-[5px] transtion-all duration-300 ease-in bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50%"
+                  class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 hover:rounded-[5px] bg-gradient-to-r hover:bg-gradient-to-tr from-[#FFA280] from-0% hover:from-[#8FD9D9] hover:from-50% to-[#8FD9D9] to-100% hover:to-[#FFA280] hover:to-50% transtion-all duration-300 ease-in"
                   >BOOK NOW</a
                 >
               </div>
             </div>
-            <div class="relative hidden sm:block">
+            <div class="hidden sm:block">
               <img
                 class="absolute right-[-230px] overflow-hidden pt-5"
                 src="./assests/img/hero-section-img.png"
@@ -184,16 +194,16 @@
         </div>
       </section>
       <img
-        class="absolute top-[43%] right-[-117px] max-w-[265px]"
+        class="absolute top-[43%] sm:hidden right-[-117px] max-w-[265px]"
         src="./assests/img/hero-section-img.png "
         alt="abs-nebula"
       />
     </div>
     <!-- OUR APPROACH -->
     <section>
-      <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
         <div
-          class="flex flex-col md:flex-row gap-3 md:gap-15 justify-center pt-[60px] md:pt-[80px] pb-[60px] md:pb-[80px] px-4 md:px-0"
+          class="flex flex-col md:flex-row gap-3 md:gap-15 justify-between pt-[60px] md:pt-[80px] pb-[60px] md:pb-[80px] px-4 md:px-0"
         >
           <h1
             class="text-2xl sm:text-4xl text-[#494336] avanttTRIAL-Normal md:max-w-[166px]"
@@ -225,12 +235,12 @@
           </h1>
 
           <div
-            class="flex flex-col gap-y-8 gap-x-0 xl:gap-x-15 md:gap-y-0 md:flex-row items-center justify-between xl:justify-around mt-[40px] sm:mt-[60px] px-4"
+            class="flex flex-col gap-y-8 gap-x-0 xl:gap-x-15 md:gap-y-0 md:flex-row items-start justify-between xl:justify-around mt-[40px] sm:mt-[60px] px-4"
           >
             <div class="flex flex-col gap-y-8 w-full md:w-[39%]">
               <div
                 onclick="toggleAccordion('accordion1')"
-                class="max-w-[480px]"
+                class="max-w-none md:max-w-[480px]"
               >
                 <div class="flex items-center justify-between">
                   <h1
@@ -247,9 +257,7 @@
                     />
                   </span>
                 </div>
-                <div
-                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
-                ></div>
+
                 <div
                   id="accordion1"
                   class="hidden pt-2 max-w-[400px] text-[#D7D9DD]"
@@ -257,10 +265,13 @@
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat, ducimus?
                 </div>
+                <div
+                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
+                ></div>
               </div>
               <div
                 onclick="toggleAccordion('accordion2')"
-                class="max-w-[480px]"
+                class="max-w-none md:max-w-[480px]"
               >
                 <div class="flex items-center justify-between">
                   <h1
@@ -277,9 +288,7 @@
                     />
                   </span>
                 </div>
-                <div
-                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
-                ></div>
+
                 <div
                   id="accordion2"
                   class="hidden pt-2 max-w-[400px] text-[#D7D9DD]"
@@ -287,10 +296,13 @@
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat, ducimus?
                 </div>
+                <div
+                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
+                ></div>
               </div>
               <div
                 onclick="toggleAccordion('accordion3')"
-                class="max-w-[480px]"
+                class="max-w-none md:max-w-[480px]"
               >
                 <div class="flex items-center justify-between">
                   <h1
@@ -307,9 +319,7 @@
                     />
                   </span>
                 </div>
-                <div
-                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
-                ></div>
+
                 <div
                   id="accordion3"
                   class="hidden pt-2 max-w-[400px] text-[#D7D9DD]"
@@ -317,12 +327,15 @@
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat, ducimus?
                 </div>
+                <div
+                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
+                ></div>
               </div>
             </div>
             <div class="flex flex-col gap-y-8 w-full md:w-[39%]">
               <div
                 onclick="toggleAccordion('accordion4')"
-                class="max-w-[480px]"
+                class="max-w-none md:max-w-[480px]"
               >
                 <div class="flex items-center justify-between">
                   <h1
@@ -339,9 +352,7 @@
                     />
                   </span>
                 </div>
-                <div
-                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
-                ></div>
+
                 <div
                   id="accordion4"
                   class="hidden pt-2 max-w-[400px] text-[#D7D9DD]"
@@ -349,10 +360,13 @@
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat, ducimus?
                 </div>
+                <div
+                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
+                ></div>
               </div>
               <div
                 onclick="toggleAccordion('accordion5')"
-                class="max-w-[480px]"
+                class="max-w-none md:max-w-[480px]"
               >
                 <div class="flex items-center justify-between">
                   <h1
@@ -369,9 +383,7 @@
                     />
                   </span>
                 </div>
-                <div
-                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100%s h-[2px] mt-6"
-                ></div>
+
                 <div
                   id="accordion5"
                   class="hidden pt-2 max-w-[400px] text-[#D7D9DD]"
@@ -379,10 +391,13 @@
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat, ducimus?
                 </div>
+                <div
+                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100%s h-[2px] mt-6"
+                ></div>
               </div>
               <div
                 onclick="toggleAccordion('accordion6')"
-                class="max-w-[480px]"
+                class="max-w-none md:max-w-[480px]"
               >
                 <div class="flex items-center justify-between">
                   <h1
@@ -399,9 +414,7 @@
                     />
                   </span>
                 </div>
-                <div
-                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
-                ></div>
+
                 <div
                   id="accordion6"
                   class="hidden pt-2 max-w-[400px] text-[#D7D9DD]"
@@ -409,6 +422,9 @@
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat, ducimus?
                 </div>
+                <div
+                  class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9D9] to-100% h-[2px] mt-6"
+                ></div>
               </div>
             </div>
           </div>
@@ -446,11 +462,9 @@
         </div>
 
         <div class="swiper mySwiper mt-[60px] sm:mt-[80px]">
-          <div class="swiper-wrapper gap-x-[10px]">
-            <div class="swiper-slide">
-              <div
-                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
-              >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#494336] h-full max-w-[300px] p-5">
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -490,10 +504,8 @@
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
-              >
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#494336] h-full max-w-[300px] p-5">
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -540,10 +552,8 @@
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
-              >
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#494336] h-full max-w-[300px] p-5">
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -574,10 +584,8 @@
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
-              >
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#494336] h-full max-w-[300px] p-5">
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -615,10 +623,8 @@
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
-              >
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#494336] h-full max-w-[300px] p-5">
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -658,10 +664,8 @@
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
-              >
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#494336] h-full max-w-[300px] p-5">
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -708,10 +712,8 @@
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
-              >
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#494336] h-full max-w-[300px] p-5">
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -742,10 +744,8 @@
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-[#494336] w-[218px] sm:w-[300px] h-[330px] sm:h-[419px] p-5"
-              >
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#494336] h-full max-w-[300px] p-5">
                 <div>
                   <img
                     class="max-w-[90px]"
@@ -791,7 +791,7 @@
       </div>
     </section>
     <!-- ABOUT NEBULA VETS -->
-    <section class="relative">
+    <section class="relative bg-[rgba(215,217,221,0.50)]">
       <div
         class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[80px] pb-[80px]"
       >
@@ -821,7 +821,7 @@
             <div class="mt-10 md:mt-13 group">
               <a
                 href="/"
-                class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] #8FD9D9_100%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
+                class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 hover:rounded-[5px] bg-gradient-to-r hover:bg-gradient-to-tr from-[#FFA280] from-0% hover:from-[#8FD9D9] hover:from-50% to-[#8FD9D9] to-100% hover:to-[#FFA280] hover:to-50% transtion-all duration-300 ease-in"
                 >LEARN MORE</a
               >
             </div>
@@ -834,44 +834,53 @@
         alt="abs-nebula"
       />
     </section>
-    <!-- BOTTOM -->
-    <section class="bg-[#494336]">
+    <!-- FOOTER -->
+    <section class="bg-[#494336] overflow-hidden relative">
       <div
-        class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[60px] md:pt-[80px]"
+        class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[50px] sm:pt-[70px] pb-[0px] lg:pb-[80px] relative"
       >
-        <div class="flex flex-col lg:flex-row items-center justify-between">
-          <div class="pl-0 xl:pl-[95px] lg:w-[50%]">
+        <div class="flex flex-col">
+          <div class="max-w-[800px]">
             <h1
-              class="avanttTRIAL-Normal text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-[#D7D9DD]"
+              class="avanttTRIAL-Normal text-2xl md:text-3xl lg:text-4xl text-[#D7D9DD]"
             >
               Our Mission
             </h1>
             <p
-              class="text-[#D7D9DD] avanttTRIAL-Normal text-sm sm:text-xl leading-[130%] mt-7 max-w-none xl:max-w-[568px]"
+              class="text-[#D7D9DD] max-w-[560px] text-sm sm:text-base lg:text-xl leading-[130%] avanttTRIAL-Normal mt-10"
             >
-              Mission is to establish a new standard of excellence in veterinary
-              care, driven by an unwavering ethical conscience.
+              Our Mission is to establish a new standard of excellence in
+              veterinary care, driven by an unwavering ethical conscience.
             </p>
-            <div class="mt-10 group">
+            <div class="mt-12 group">
               <a
                 href="/"
-                class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-[5px] sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
+                class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 hover:rounded-[5px] bg-gradient-to-r hover:bg-gradient-to-tr from-[#FFA280] from-0% hover:from-[#8FD9D9] hover:from-50% to-[#8FD9D9] to-100% hover:to-[#FFA280] hover:to-50% transtion-all duration-300 ease-in"
                 >BOOK NOW</a
               >
             </div>
           </div>
-          <div class="max-w-[290px] ms-auto mt-4 sm:mt-0 sm:max-w-[580px]">
-            <img
-              class="w-full"
-              src="./assests/img/nebula-dog-car.png"
-              alt="nebula-dog-cat"
-            />
-          </div>
         </div>
       </div>
-      <div class="bg-[#D8DADC] h-[1px] w-full"></div>
+      <div class="absolute max-w-[584px] right-0 top-[-10px] hidden lg:block">
+        <img
+          class="w-full"
+          src="./assests/img/dog-cat-footer.png"
+          alt="footer-abs-animalhealth"
+        />
+      </div>
+      <div class="max-w-[500px] ms-auto block lg:hidden">
+        <img
+          class="w-full"
+          src="./assests/img/dog-cat-footer.png"
+          alt="footer-veternary"
+        />
+      </div>
+
+      <div class="border-bottom bg-[#D8DADC] h-[1px]"></div>
+
       <div
-        class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[60px] pb-[60px]"
+        class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-[60px]"
       >
         <div
           class="flex flex-wrap lg:flex-nowrap gap-6 justify-between pb-[40px] sm:pb-0"
@@ -885,7 +894,7 @@
             <input
               type="text"
               placeholder="Email"
-              class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
+              class="border-2 bg-transparent placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
             />
             <div class="flex items-center gap-x-5 mt-6">
               <span class="group transition-all ease-in duration-300">
@@ -988,7 +997,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="max-[520px]:w-full">
             <ul class="text-[#D7D9DD]">
               <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
                 Services
@@ -996,32 +1005,46 @@
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./emergency-care.html" class="avanttTRIAL-Normal">
+                <a
+                  href="./veterinary-services.html#preventive"
+                  class="avanttTRIAL-Normal"
+                >
                   Preventive Care</a
                 >
               </li>
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./dental-care.html" class="avanttTRIAL-Normal">
+                <a
+                  href="./veterinary-services.html#sick"
+                  class="avanttTRIAL-Normal"
+                >
                   Sick Patient Care</a
                 >
               </li>
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./surgery.html" class="avanttTRIAL-Normal"> Surgery</a>
+                <a
+                  href="./veterinary-services.html#surgery"
+                  class="avanttTRIAL-Normal"
+                >
+                  Surgery</a
+                >
               </li>
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./veterinary-services.html" class="avanttTRIAL-Normal">
+                <a
+                  href="./veterinary-services.html#additional"
+                  class="avanttTRIAL-Normal"
+                >
                   Additional Services</a
                 >
               </li>
             </ul>
           </div>
-          <div>
+          <div class="max-[520px]:w-full">
             <ul class="text-[#D7D9DD]">
               <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
                 Company
@@ -1036,13 +1059,13 @@
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./join-team.html" class="avanttTRIAL-Normal">
+                <a href="./Hospice-Euthanasia.html" class="avanttTRIAL-Normal">
                   Carreers</a
                 >
               </li>
             </ul>
           </div>
-          <div>
+          <div class="max-[520px]:w-full">
             <ul class="text-[#D7D9DD]">
               <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
                 Contact Us
@@ -1073,7 +1096,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,

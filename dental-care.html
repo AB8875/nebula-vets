@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dental Care</title>
+    <title>Nebula Vets-Dental Care</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assests/style/font.css" />
     <link rel="stylesheet" href="./assests/style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assests/img/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- NAV BAR -->
@@ -14,15 +19,15 @@
       <section>
         <nav class="bg-[#494336]">
           <div
-            class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-7"
+            class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
             <div
-              class="flex flex-wrap md:flex-row items-center justify-between gap-y-4 md:gap-y-0"
+              class="flex flex-wrap md:flex-row items-center justify-between"
             >
               <div>
                 <a href="/">
                   <img
-                    class="max-w-[90px] sm:max-w-[120px]"
+                    class="max-w-[85px] lg:max-w-[120px]"
                     src="./assests/img/logo.png"
                     alt="logo"
                   />
@@ -56,7 +61,7 @@
                 class="flex flex-wrap justify-center md:flex-row items-center gap-3 lg:gap-10 xl:gap-14 hidden md:flex"
               >
                 <ul
-                  class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex justify-center items-center gap-4 md:gap-5 lg:gap-10 xl:gap-16"
+                  class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex items-center gap-3 md:gap-3 lg:gap-10 xl:gap-16"
                 >
                   <li
                     class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
@@ -81,14 +86,14 @@
                   <li
                     class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
                   >
-                    <a href="./join-team.html">PATIENT PORTAL</a>
+                    <a href="./emergency-care.html">PATIENT PORTAL</a>
                   </li>
                 </ul>
 
-                <div class="mt-4 md:mt-0 group">
+                <div class="mt-4 md:mt-0 group flex">
                   <a
                     href="/"
-                    class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
+                    class="roboto-mono text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] sm:py-3 px-5 lg:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
                     >BOOK NOW</a
                   >
                 </div>
@@ -99,6 +104,7 @@
               id="overlay"
               class="fixed inset-0 bg-black bg-opacity-50 hidden"
             ></div>
+
             <div
               id="sidebar"
               class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
@@ -132,7 +138,7 @@
                 <li
                   class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
                 >
-                  <a href="./Hospice-Euthanasia.html">PATIENT PORTAL</a>
+                  <a href="./animal-health-check.html">PATIENT PORTAL</a>
                 </li>
                 <li class="flex">
                   <a
@@ -147,14 +153,14 @@
         </nav>
       </section>
       <!-- HERO-SECTION -->
-      <section class="overflow-hidden">
+      <section class="relative">
         <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
           <div
-            class="flex flex-col-reverse lg:flex-row items-center justify-end mt-[5px] lg:mt-16 md:pb-11"
+            class="flex flex-col-reverse lg:flex-row items-center justify-around mt-[5px] lg:mt-[50px] xl:mt-[80px] pb-10 md:pb-20"
           >
-            <div class="pe-0 md:pe-20 py-10 md:pb-0">
+            <div class="pe-0 lg:ms-[-50px] md:pb-0 pt-[230px] lg:pt-0">
               <h1
-                class="avanttTRIAL-Normal max-w-[250px] sm:max-w-none leading-[120%] text-[35px] sm:text-[40px] md:text-[47px] lg:text-[52px] xl:text-[70px] text-[#D7D9DD]"
+                class="avanttTRIAL-Normal max-w-[250px] sm:max-w-[769px] leading-[120%] text-[35px] sm:text-[40px] md:text-[47px] lg:text-[52px] xl:text-[70px] text-[#D7D9DD]"
               >
                 Dental Care
               </h1>
@@ -168,23 +174,27 @@
                 pet's oral health, we conduct thorough dental examinations to
                 identify any dental issues that require attention.
               </p>
-
-              <div class="mt-10 group">
+              <div class="mt-10 group flex">
                 <a
                   href="/"
-                  class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50% transtion-all duration-300 ease-in"
+                  class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 hover:rounded-[5px] bg-gradient-to-r hover:bg-gradient-to-tr from-[#FFA280] from-0% hover:from-[#8FD9D9] hover:from-50% to-[#8FD9D9] to-100% hover:to-[#FFA280] hover:to-50% transtion-all duration-300 ease-in"
                   >BOOK NOW</a
                 >
               </div>
             </div>
-            <div
-              class="max-w-[350px] sm:max-w-[400px] md:max-w-[500px] xl:max-w-[649px] me-[-180px] sm:me-[-400px] lg:me-[-80px] mt-5 sm:mt-0 mb-[-100px] sm:mb-0"
-            >
+            <div class="mt-5 sm:mt-0 mb-[-100px] sm:mb-0">
               <img
-                class="w-full"
+                class="w-full absolute max-w-[211px] sm:max-w-[350px] md:max-w-[400px] xl:max-w-[508px] bottom-0 right-0 hidden lg:block mt-7 mb-6"
                 src="./assests/img/dental-hero.png"
-                alt="vaccinations"
+                alt="dog-car"
               />
+              <div>
+                <img
+                  class="absolute w-full !max-w-[300px] sm:!max-w-[400px] right-0 lg:hidden mb-10 sm:mb-0"
+                  src="./assests/img/dental-hero.png"
+                  alt="dog-car"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -279,9 +289,7 @@
                 />
               </span>
             </div>
-            <div
-              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
-            ></div>
+
             <div id="accordion1" class="hidden pt-2 w-full text-[#D7D9DD] mt-6">
               <p
                 class="avanttTRIAL-Normal text-lg leading-[130%] text-black max-w-[1000px]"
@@ -294,6 +302,9 @@
                 furry friend.
               </p>
             </div>
+            <div
+              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
+            ></div>
           </div>
           <div onclick="toggleAccordion('accordion2')" class="w-full">
             <div class="flex items-center justify-between">
@@ -311,9 +322,7 @@
                 />
               </span>
             </div>
-            <div
-              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
-            ></div>
+
             <div id="accordion2" class="hidden pt-2 w-full text-[#D7D9DD] mt-6">
               <p
                 class="avanttTRIAL-Normal text-lg leading-[130%] text-black max-w-[1000px]"
@@ -325,6 +334,9 @@
                 detect potential issues early and provide timely treatment.
               </p>
             </div>
+            <div
+              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
+            ></div>
           </div>
           <div onclick="toggleAccordion('accordion3')" class="w-full">
             <div class="flex items-center justify-between">
@@ -342,9 +354,7 @@
                 />
               </span>
             </div>
-            <div
-              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
-            ></div>
+
             <div id="accordion3" class="hidden pt-2 w-full text-[#D7D9DD] mt-6">
               <p
                 class="avanttTRIAL-Normal text-lg leading-[130%] text-black max-w-[1000px]"
@@ -356,6 +366,9 @@
                 the teeth and gum line, ensuring a fresh and clean mouth.
               </p>
             </div>
+            <div
+              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
+            ></div>
           </div>
           <div onclick="toggleAccordion('accordion4')" class="w-full">
             <div class="flex items-center justify-between">
@@ -373,9 +386,7 @@
                 />
               </span>
             </div>
-            <div
-              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
-            ></div>
+
             <div id="accordion4" class="hidden pt-2 w-full text-[#D7D9DD] mt-6">
               <p
                 class="avanttTRIAL-Normal text-lg leading-[130%] text-black max-w-[1000px]"
@@ -387,6 +398,9 @@
                 restoring oral health.
               </p>
             </div>
+            <div
+              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
+            ></div>
           </div>
           <div onclick="toggleAccordion('accordion5')" class="w-full">
             <div class="flex items-center justify-between">
@@ -404,9 +418,7 @@
                 />
               </span>
             </div>
-            <div
-              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
-            ></div>
+
             <div id="accordion5" class="hidden pt-2 w-full text-[#D7D9DD] mt-6">
               <p
                 class="avanttTRIAL-Normal text-lg leading-[130%] text-black max-w-[1000px]"
@@ -418,6 +430,9 @@
                 pet's comfort throughout.
               </p>
             </div>
+            <div
+              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
+            ></div>
           </div>
           <div onclick="toggleAccordion('accordion6')" class="w-full">
             <div class="flex items-center justify-between">
@@ -435,9 +450,7 @@
                 />
               </span>
             </div>
-            <div
-              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
-            ></div>
+
             <div id="accordion6" class="hidden pt-2 w-full text-[#D7D9DD] mt-6">
               <p
                 class="avanttTRIAL-Normal text-lg leading-[130%] text-black max-w-[1000px]"
@@ -450,6 +463,9 @@
                 experience.
               </p>
             </div>
+            <div
+              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
+            ></div>
           </div>
           <div onclick="toggleAccordion('accordion7')" class="w-full">
             <div class="flex items-center justify-between">
@@ -467,9 +483,7 @@
                 />
               </span>
             </div>
-            <div
-              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
-            ></div>
+
             <div id="accordion7" class="hidden pt-2 w-full text-[#D7D9DD] mt-6">
               <p
                 class="avanttTRIAL-Normal text-lg leading-[130%] text-black max-w-[1000px]"
@@ -482,6 +496,9 @@
                 oral health between visits.
               </p>
             </div>
+            <div
+              class="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"
+            ></div>
           </div>
         </div>
       </div>
@@ -506,7 +523,7 @@
       </div>
     </section>
     <!-- FOOTER -->
-    <section class="bg-[#494336] overflow-hidden mt-16">
+    <section class="bg-[#494336] overflow-hidden relative">
       <div
         class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[50px] sm:pt-[70px] pb-[0px] lg:pb-[80px] relative"
       >
@@ -527,23 +544,21 @@
             <div class="mt-12 group">
               <a
                 href="/"
-                class="roboto-mono text-sm sm:text-base md:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 group-hover:rounded-[5px] transtion-all duration-300 ease-in bg-gradient-to-r group-hover:bg-gradient-to-tr from-[#FFA280] from-0% group-hover:from-[#8FD9D9] group-hover:from-50% to-[#8FD9D9] to-100% group-hover:to-[#FFA280] group-hover:to-50%"
+                class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 hover:rounded-[5px] bg-gradient-to-r hover:bg-gradient-to-tr from-[#FFA280] from-0% hover:from-[#8FD9D9] hover:from-50% to-[#8FD9D9] to-100% hover:to-[#FFA280] hover:to-50% transtion-all duration-300 ease-in"
                 >BOOK NOW</a
               >
             </div>
           </div>
-          <div
-            class="absolute max-w-[600px] right-[-164px] top-[14px] hidden lg:block"
-          >
-            <img
-              class="w-full"
-              src="./assests/img/footer-abs-animalhealth.png"
-              alt="footer-abs-animalhealth"
-            />
-          </div>
         </div>
       </div>
-      <div class="max-w-[500px] ms-auto block lg:hidden">
+      <div class="absolute max-w-[600px] right-0 top-[14px] hidden lg:block">
+        <img
+          class="w-full"
+          src="./assests/img/footer-abs-animalhealth.png"
+          alt="footer-abs-animalhealth"
+        />
+      </div>
+      <div class="max-w-[410px] ms-auto block lg:hidden">
         <img
           class="w-full"
           src="./assests/img/footer-veternary.png"
@@ -671,7 +686,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="max-[520px]:w-full">
             <ul class="text-[#D7D9DD]">
               <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
                 Services
@@ -679,32 +694,46 @@
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./dental-care.html" class="avanttTRIAL-Normal">
+                <a
+                  href="./veterinary-services.html#preventive"
+                  class="avanttTRIAL-Normal"
+                >
                   Preventive Care</a
                 >
               </li>
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./emergency-care.html" class="avanttTRIAL-Normal">
+                <a
+                  href="./veterinary-services.html#sick"
+                  class="avanttTRIAL-Normal"
+                >
                   Sick Patient Care</a
                 >
               </li>
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./surgery.html" class="avanttTRIAL-Normal"> Surgery</a>
+                <a
+                  href="./veterinary-services.html#surgery"
+                  class="avanttTRIAL-Normal"
+                >
+                  Surgery</a
+                >
               </li>
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./about-nebula-vets.html" class="avanttTRIAL-Normal">
+                <a
+                  href="./veterinary-services.html#additional"
+                  class="avanttTRIAL-Normal"
+                >
                   Additional Services</a
                 >
               </li>
             </ul>
           </div>
-          <div>
+          <div class="max-[520px]:w-full">
             <ul class="text-[#D7D9DD]">
               <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
                 Company
@@ -719,13 +748,13 @@
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./join-team.html" class="avanttTRIAL-Normal">
+                <a href="./Hospice-Euthanasia.html" class="avanttTRIAL-Normal">
                   Carreers</a
                 >
               </li>
             </ul>
           </div>
-          <div>
+          <div class="max-[520px]:w-full">
             <ul class="text-[#D7D9DD]">
               <li class="roboto-mono text-base sm:text-2xl leading-[150%]">
                 Contact Us
