@@ -16,20 +16,23 @@
       href="./assests/img/favicon.ico"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
-      <section>
+      <section class="relative overflow-hidden">
         <nav class="bg-[#494336]">
           <div
+            data-aos="flip-left"
+            data-aos-duration="1500"
             class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
             <div
               class="flex flex-wrap md:flex-row items-center justify-between"
             >
               <div>
-                <a href="/">
+                <a href="./index.html">
                   <img
                     class="max-w-[85px] lg:max-w-[120px]"
                     src="./assests/img/logo.png"
@@ -157,8 +160,12 @@
         </nav>
       </section>
       <!-- HERO-SECTION -->
-      <section class="relative">
-        <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
+      <section class="relative overflow-hidden">
+        <div
+          data-aos="flip-right"
+          data-aos-duration="1500"
+          class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12"
+        >
           <div
             class="flex flex-col-reverse lg:flex-row items-center justify-around mt-[5px] lg:mt-[50px] xl:mt-[80px] pb-10 md:pb-20"
           >
@@ -206,8 +213,10 @@
       </section>
     </div>
     <!-- AVAILABLE TEST -->
-    <section class="bg-[rgba(215,217,221,0.50)] relative">
+    <section class="bg-[rgba(215,217,221,0.50)] relative overflow-hidden">
       <div
+        data-aos="fade-right"
+        data-aos-duration="1500"
         class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-11 pb-[60px] lg:pb-[140px] lg:pt-20"
       >
         <div>
@@ -244,8 +253,10 @@
       />
     </section>
     <!-- ACCORIDION -->
-    <section>
+    <section class="relative overflow-hidden">
       <div
+        data-aos="fade-left"
+        data-aos-duration="1590"
         class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-11 lg:py-20"
       >
         <div class="flex flex-col gap-y-8 w-full mt-10">
@@ -485,8 +496,12 @@
       </div>
     </section>
     <!-- EXPERINCE EXCEPTIONAL -->
-    <section class="bg-[rgba(215,217,221,0.50)]">
-      <div class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-20">
+    <section class="bg-[rgba(215,217,221,0.50)] relative overflow-hidden">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-20"
+      >
         <h1
           class="text-[#494336] text-2xl sm:text-3xl lg:text-4xl avanttTRIAL-Normal"
         >
@@ -505,8 +520,10 @@
       </div>
     </section>
     <!-- accordoan-2 -->
-    <section>
+    <section class="overflow-hidden relative">
       <div
+        data-aos="zoom-in"
+        data-aos-duration="1500"
         class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-11 lg:py-20"
       >
         <div class="flex flex-col gap-y-8 w-full mt-10">
@@ -608,7 +625,7 @@
       </div>
     </section>
     <!-- swiper -->
-    <section class="bg-[rgba(215,217,221,0.50)]">
+    <section class="bg-[rgba(215,217,221,0.50)] overflow-hidden relative">
       <div class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-20">
         <h1
           class="text-[#494336] text-2xl sm:text-3xl lg:text-4xl avanttTRIAL-Normal"
@@ -880,6 +897,8 @@
         </div>
         <div class="flex flex-wrap gap-5 justify-center mt-10 hidden sm:flex">
           <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
             class="bg-[#494336] pt-11 ps-11 pb-6 w-full max-w-[530px] h-[420px] relative"
           >
             <ul class="list-disc list-inside">
@@ -933,6 +952,8 @@
             />
           </div>
           <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
             class="bg-[#494336] pt-11 ps-11 pb-6 w-full max-w-[530px] h-[420px] relative"
           >
             <ul class="list-disc list-inside">
@@ -983,6 +1004,8 @@
     <!-- FOOTER -->
     <section class="bg-[#494336] overflow-hidden relative">
       <div
+        data-aos="zoom-in"
+        data-aos-duration="1500"
         class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[50px] sm:pt-[70px] pb-[0px] lg:pb-[162px] relative"
       >
         <div class="flex flex-col">
@@ -1003,7 +1026,11 @@
           </div>
         </div>
       </div>
-      <div class="absolute max-w-[600px] right-0 top-[14px] hidden lg:block">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        class="absolute max-w-[600px] right-0 top-[14px] hidden lg:block"
+      >
         <img
           class="w-full"
           src="./assests/img/footer-abs-animalhealth.png"
@@ -1021,6 +1048,8 @@
       <div class="border-bottom bg-[#D8DADC] h-[1px]"></div>
 
       <div
+        data-aos="flip-left"
+        data-aos-duration="1500"
         class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-[60px]"
       >
         <div
@@ -1314,6 +1343,10 @@
       menuBtn.addEventListener("click", openSidebar);
       closeBtn.addEventListener("click", closeSidebar);
       overlay.addEventListener("click", closeSidebar);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

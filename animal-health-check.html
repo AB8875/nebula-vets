@@ -16,20 +16,23 @@
       href="./assests/img/favicon.ico"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
-      <section>
+      <section class="overflow-hidden relative">
         <nav class="bg-[#494336]">
           <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
             class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
             <div
               class="flex flex-wrap md:flex-row items-center justify-between"
             >
               <div>
-                <a href="/">
+                <a href="./index.html">
                   <img
                     class="max-w-[85px] lg:max-w-[120px]"
                     src="./assests/img/logo.png"
@@ -157,12 +160,16 @@
         </nav>
       </section>
       <!-- HERO-SECTION -->
-      <section class="relative">
+      <section class="relative overflow-hidden">
         <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
           <div
             class="flex flex-col-reverse lg:flex-row items-center justify-around mt-[5px] lg:mt-[50px] xl:mt-[80px] pb-10 md:pb-20"
           >
-            <div class="pe-0 lg:ms-[-80px] md:pb-0">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              class="pe-0 lg:ms-[-80px] md:pb-0"
+            >
               <h1
                 class="avanttTRIAL-Normal max-w-[250px] sm:max-w-none leading-[120%] text-[35px] sm:text-[40px] md:text-[47px] lg:text-[52px] xl:text-[70px] text-[#D7D9DD]"
               >
@@ -190,6 +197,8 @@
             </div>
             <div class="mt-5 sm:mt-0 mb-[-100px] sm:mb-0">
               <img
+                data-aos="fade-right"
+                data-aos-duration="1500"
                 class="w-full absolute max-w-[211px] sm:max-w-[350px] md:max-w-[400px] xl:max-w-[528px] bottom-0 right-0 hidden lg:block my-9 h-[500px]"
                 src="./assests/img/hero-animalcheck.png"
                 alt="dog-car"
@@ -207,17 +216,21 @@
       </section>
     </div>
     <!-- ANIMAL HEALTH CHECK -->
-    <section class="bg-[rgba(215,217,221,0.50)] relative">
+    <section class="bg-[rgba(215,217,221,0.50)] relative overflow-hidden">
       <div
         class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-11 lg:py-20"
       >
         <div>
           <h1
+            data-aos="fade-down"
+            data-aos-duration="1500"
             class="text-[#494336] avanttTRIAL-Normal text-2xl sm:text-3xl md:text-4xl"
           >
             Animal Health Check Exam
           </h1>
           <p
+            data-aos="fade-up"
+            data-aos-duration="1400"
             class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-5 avanttTRIAL-Normal"
           >
             During our animal health check, we perform a thorough examination
@@ -227,7 +240,7 @@
             friend is young, mature, or a senior, our veterinary professionals
             have the expertise to address their specific requirements.
           </p>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1500">
             <p
               class="text-[#494336] avanttTRIAL-Normal text-sm sm:text-base md:text-lg lg:text-xl mt-5"
             >
@@ -257,7 +270,7 @@
       />
     </section>
     <!-- ANIMAL HEALTH CHECK MATTER -->
-    <section>
+    <section class="relative overflow-hidden">
       <div class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-20">
         <div>
           <h1
@@ -265,7 +278,7 @@
           >
             Why Animal Health Checks Matter:
           </h1>
-          <div>
+          <div data-aos="fade-down" data-aos-duration="1500">
             <div class="flex flex-col gap-y-8 w-full mt-10">
               <div onclick="toggleAccordion('accordion1')" class="w-full">
                 <div class="flex items-center justify-between">
@@ -528,8 +541,12 @@
       </div>
     </section>
     <!-- EXPERINCE EXCEPTIONAL -->
-    <section class="bg-[rgba(215,217,221,0.50)]">
-      <div class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-20">
+    <section class="bg-[rgba(215,217,221,0.50)] overflow-hidden relative">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-20"
+      >
         <h1
           class="text-[#494336] text-2xl sm:text-3xl lg:text-4xl avanttTRIAL-Normal"
         >
@@ -549,6 +566,8 @@
     <!-- FOOTER -->
     <section class="bg-[#494336] overflow-hidden relative">
       <div
+        data-aos="fade-right"
+        data-aos-duration="1500"
         class="max-w-[1200px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[50px] sm:pt-[70px] pb-[0px] lg:pb-[80px] relative"
       >
         <div class="flex flex-col">
@@ -575,7 +594,11 @@
           </div>
         </div>
       </div>
-      <div class="absolute max-w-[600px] right-0 top-[14px] hidden lg:block">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        class="absolute max-w-[600px] right-0 top-[14px] hidden lg:block"
+      >
         <img
           class="w-full"
           src="./assests/img/footer-abs-animalhealth.png"
@@ -593,6 +616,8 @@
       <div class="border-bottom bg-[#D8DADC] h-[1px]"></div>
 
       <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
         class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 py-[60px]"
       >
         <div
@@ -848,6 +873,10 @@
       menuBtn.addEventListener("click", openSidebar);
       closeBtn.addEventListener("click", closeSidebar);
       overlay.addEventListener("click", closeSidebar);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
