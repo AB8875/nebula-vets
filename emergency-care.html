@@ -17,7 +17,7 @@
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
       <section>
-        <nav class="bg-[#494336]">
+        <nav class="bg-[#494336] fixed top-0 w-full !z-10">
           <div
             class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
@@ -84,7 +84,7 @@
                     <a href="./join-team.html">CAREER</a>
                   </li>
                   <li
-                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in active"
                   >
                     <a href="./emergency-care.html">PATIENT PORTAL</a>
                   </li>
@@ -107,7 +107,7 @@
 
             <div
               id="sidebar"
-              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
+              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-8 pt-16 flex flex-col overflow-y-auto"
             >
               <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
                 &times;
@@ -154,7 +154,9 @@
       </section>
       <!-- HERO-SECTION -->
       <section class="relative">
-        <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
+        <div
+          class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[120px]"
+        >
           <div
             class="flex flex-col-reverse lg:flex-row items-center justify-around mt-[5px] lg:mt-[50px] xl:mt-[80px] pb-10 md:pb-20"
           >
@@ -614,7 +616,7 @@
             <input
               type="text"
               placeholder="Email"
-              class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
+              class="border-2 bg-transparent placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
             />
             <div class="flex items-center gap-x-5 mt-6">
               <span class="group transition-all ease-in duration-300">

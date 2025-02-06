@@ -16,13 +16,12 @@
       href="./assests/img/favicon.ico"
       type="image/x-icon"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NAV BAR -->
-    <div class="relative overflow-hidden">
+    <div class="overflow-hidden relative">
       <section>
-        <nav class="bg-[#494336]">
+        <nav class="bg-[#494336] fixed top-0 w-full !z-10">
           <div
             class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
@@ -118,7 +117,7 @@
 
             <div
               id="sidebar"
-              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
+              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-8 pt-16 flex flex-col overflow-y-auto"
             >
               <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
                 &times;
@@ -166,16 +165,14 @@
       <!-- HERO SECTION -->
       <section class="relative overflow-hidden">
         <div
-          class="bg-[url('./assests/img/hero-bg.png')] bg-[65%] sm:bg-top bg-no-repeat bg-cover w-full h-[300px] sm:h-[567px] overflow-hidden mt-[350px] sm:mt-0"
+          class="bg-[url('./assests/img/hero-bg.png')] bg-[65%] sm:bg-top bg-no-repeat bg-cover w-full h-[300px] sm:h-[567px] overflow-hidden mt-[350px] sm:mt-[100px]"
         >
           <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
             <div
-              data-aos="fade-right"
-              data-aos-duration="1700"
-              class="absolute top-[-100%] sm:top-[20%] 2xl:!left-[24%] sm:left-[12%]"
+              class="absolute !top-[18%] sm:!top-[37%] 2xl:!left-[15%] sm:!left-[12%]"
             >
               <h1
-                class="text-[#494336] sm:text-[#D7D9DD] avanttTRIAL-Regular text-[35px] sm:text-[40px] md:text-[47px] lg:text-[52px] xl:text-[70px] max-w-[250px] sm:max-w-[511px]"
+                class="text-[#494336] sm:text-[#D7D9DD] avanttTRIAL-Regular leading-[130%] text-[35px] sm:text-[40px] md:text-[47px] lg:text-[52px] xl:text-[70px] max-w-[250px] sm:max-w-[511px]"
               >
                 Welcome to Nebula Vets
               </h1>
@@ -861,7 +858,7 @@
             </p>
             <div class="mt-10 md:mt-13 group">
               <a
-                href="/"
+                href="./about-nebula-vets.html"
                 class="roboto-mono text-base sm:text-lg text-[#494336] font-medium leading-[137%] rounded-[27px] py-2 sm:py-3 px-5 sm:px-9 border-0 hover:rounded-[5px] bg-gradient-to-r hover:bg-gradient-to-tr from-[#FFA280] from-0% hover:from-[#8FD9D9] hover:from-50% to-[#8FD9D9] to-100% hover:to-[#FFA280] hover:to-50% transtion-all duration-300 ease-in"
                 >LEARN MORE</a
               >
@@ -1110,7 +1107,7 @@
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./Hospice-Euthanasia.html" class="avanttTRIAL-Normal">
+                <a href="./join-team.html" class="avanttTRIAL-Normal">
                   Carreers</a
                 >
               </li>
@@ -1226,10 +1223,6 @@
       menuBtn.addEventListener("click", openSidebar);
       closeBtn.addEventListener("click", closeSidebar);
       overlay.addEventListener("click", closeSidebar);
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
     </script>
   </body>
 </html>

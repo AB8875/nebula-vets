@@ -12,13 +12,12 @@
       href="./assests/img/favicon.ico"
       type="image/x-icon"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
       <section class="relative overflow-hidden">
-        <nav class="bg-[#494336]">
+        <nav class="bg-[#494336] fixed top-0 w-full !z-10">
           <div
             data-aos="fade-left"
             data-aos-duration="1500"
@@ -72,7 +71,7 @@
                     <a href="./veterinary-services.html">SERVICES</a>
                   </li>
                   <li
-                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in active"
                   >
                     <a href="./about-nebula-vets.html"> ABOUT US</a>
                   </li>
@@ -110,7 +109,7 @@
 
             <div
               id="sidebar"
-              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
+              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-8 pt-16 flex flex-col overflow-y-auto"
             >
               <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
                 &times;
@@ -158,9 +157,7 @@
       <!-- HERO-SECTION -->
       <section class="overflow-hidden relative">
         <div
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          class="max-w-[1440px] mx-auto px-0 sm:px-4 md:px-7 lg:px-10 xl:px-12"
+          class="max-w-[1440px] mx-auto px-0 sm:px-4 md:px-7 lg:px-10 xl:px-12 pt-[120px]"
         >
           <div class="relative sm:hidden">
             <h1
@@ -362,7 +359,7 @@
             data-aos-duration="1500"
             class="flex flex-col jusitfy-center items-center"
           >
-            <div class="max-w-[100px] sm:max-w-[207px]">
+            <div class="max-w-[150px] sm:max-w-[207px]">
               <img
                 class="w-full"
                 src="./assests/img/about-eclipse.png"
@@ -381,7 +378,7 @@
             data-aos-duration="1550"
             class="flex flex-col jusitfy-center items-center"
           >
-            <div class="max-w-[100px] sm:max-w-[207px]">
+            <div class="max-w-[150px] sm:max-w-[207px]">
               <img
                 class="w-full"
                 src="./assests/img/about-eclipse.png"
@@ -400,7 +397,7 @@
             data-aos-duration="1600"
             class="flex flex-col jusitfy-center items-center"
           >
-            <div class="max-w-[100px] sm:max-w-[207px]">
+            <div class="max-w-[150px] sm:max-w-[207px]">
               <img
                 class="w-full"
                 src="./assests/img/about-eclipse.png"
@@ -419,7 +416,7 @@
             data-aos-duration="1650"
             class="flex flex-col jusitfy-center items-center"
           >
-            <div class="max-w-[100px] sm:max-w-[207px]">
+            <div class="max-w-[150px] sm:max-w-[207px]">
               <img
                 class="w-full"
                 src="./assests/img/about-eclipse.png"
@@ -438,7 +435,7 @@
             data-aos-duration="1700"
             class="flex flex-col jusitfy-center items-center"
           >
-            <div class="max-w-[100px] sm:max-w-[207px]">
+            <div class="max-w-[150px] sm:max-w-[207px]">
               <img
                 class="w-full"
                 src="./assests/img/about-eclipse.png"
@@ -457,7 +454,7 @@
             data-aos-duration="1750"
             class="flex flex-col jusitfy-center items-center"
           >
-            <div class="max-w-[100px] sm:max-w-[207px]">
+            <div class="max-w-[150px] sm:max-w-[207px]">
               <img
                 class="w-full"
                 src="./assests/img/about-eclipse.png"
@@ -501,7 +498,7 @@
             <input
               type="text"
               placeholder="Email"
-              class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
+              class="border-2 bg-transparent placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
             />
             <div class="flex items-center gap-x-5 mt-6">
               <span class="group transition-all ease-in duration-300">
@@ -725,10 +722,6 @@
       menuBtn.addEventListener("click", openSidebar);
       closeBtn.addEventListener("click", closeSidebar);
       overlay.addEventListener("click", closeSidebar);
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
     </script>
   </body>
 </html>

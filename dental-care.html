@@ -17,11 +17,9 @@
   <body>
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
-      <section class="overflow-hidden relative">
-        <nav class="bg-[#494336]">
+      <section>
+        <nav class="bg-[#494336] fixed top-0 w-full !z-10">
           <div
-            data-aos="zoom-in"
-            data-aos-duration="1500"
             class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
             <div
@@ -107,7 +105,6 @@
               id="overlay"
               class="fixed inset-0 bg-black bg-opacity-50 hidden"
             ></div>
-
             <div
               id="sidebar"
               class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
@@ -156,11 +153,9 @@
         </nav>
       </section>
       <!-- HERO-SECTION -->
-      <section class="relative overflow-hidden">
+      <section class="relative">
         <div
-          data-aos="zoom-out"
-          data-aos-duration="1500"
-          class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12"
+          class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[120px]"
         >
           <div
             class="flex flex-col-reverse lg:flex-row items-center justify-around mt-[5px] lg:mt-[50px] xl:mt-[80px] pb-10 md:pb-20"
@@ -191,7 +186,7 @@
             </div>
             <div class="mt-5 sm:mt-0 mb-[-100px] sm:mb-0">
               <img
-                class="w-full absolute max-w-[211px] sm:max-w-[350px] md:max-w-[400px] xl:max-w-[508px] bottom-0 right-0 hidden lg:block mt-7 mb-6"
+                class="w-full absolute max-w-[211px] sm:max-w-[350px] md:max-w-[400px] xl:max-w-[508px] bottom-0 !right-0 hidden lg:block mt-7 mb-6"
                 src="./assests/img/dental-hero.png"
                 alt="dog-car"
               />
@@ -606,7 +601,7 @@
             <input
               type="text"
               placeholder="Email"
-              class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
+              class="border-2 bg-transparent placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
             />
             <div class="flex items-center gap-x-5 mt-6">
               <span class="group transition-all ease-in duration-300">
@@ -771,7 +766,7 @@
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./Hospice-Euthanasia.html" class="avanttTRIAL-Normal">
+                <a href="./join-team.html" class="avanttTRIAL-Normal">
                   Carreers</a
                 >
               </li>

@@ -17,7 +17,7 @@
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
       <section>
-        <nav class="bg-[#494336]">
+        <nav class="bg-[#494336] fixed top-0 w-full !z-10">
           <div
             class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
@@ -107,7 +107,7 @@
 
             <div
               id="sidebar"
-              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
+              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-8 pt-16 flex flex-col overflow-y-auto"
             >
               <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
                 &times;
@@ -560,7 +560,7 @@
             <input
               type="text"
               placeholder="Email"
-              class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
+              class="border-2 bg-transparent placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
             />
             <div class="flex items-center gap-x-5 mt-6">
               <span class="group transition-all ease-in duration-300">
@@ -717,12 +717,16 @@
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="/" class="avanttTRIAL-Normal"> About us</a>
+                <a href="./about-nebula-vets.html" class="avanttTRIAL-Normal">
+                  About us</a
+                >
               </li>
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="/" class="avanttTRIAL-Normal"> Carreers</a>
+                <a href="./join-team.html" class="avanttTRIAL-Normal">
+                  Carreers</a
+                >
               </li>
             </ul>
           </div>

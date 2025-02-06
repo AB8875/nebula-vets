@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -25,7 +25,7 @@
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
       <section>
-        <nav class="bg-[#494336]">
+        <nav class="bg-[#494336] fixed top-0 w-full !z-10">
           <div
             class="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 py-7"
           >
@@ -72,7 +72,7 @@
                   class="*:text-[#D7D9DD] *:text-sm *:font-medium tracking-[1.4px] flex items-center gap-3 md:gap-3 lg:gap-10 xl:gap-16"
                 >
                   <li
-                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in active"
                   >
                     <a href="./veterinary-services.html">SERVICES</a>
                   </li>
@@ -115,7 +115,7 @@
 
             <div
               id="sidebar"
-              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
+              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-8 pt-16 flex flex-col overflow-y-auto"
             >
               <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
                 &times;
@@ -266,7 +266,7 @@
       <div class="bg-[#494336] py-[45px] sm:py-[60px] md:py-[80px]">
         <div class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12">
           <ul
-            class="*:text-[rgba(217,217,217,0.50)] avanttTRIAL-Normal text-2xl md:text-3xl lg:*:text-4xl flex flex-wrap justify-center gap-8 lg:justify-between"
+            class="*:text-[rgba(217,217,217,0.50)] avanttTRIAL-Normal text-2xl md:text-3xl lg:*:text-4xl flex flex-wrap justify-center gap-8 lg:justify-between max-[500px]:flex-col"
           >
             <li
               class="avanttTRIAL-Normal hover:text-[#D7D9DD] transition-all ease-in duration-300"
@@ -298,7 +298,7 @@
         <!-- preventive care -->
         <div
           id="preventive"
-          class="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5"
+          class="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5 2xl:max-w-[2000px] 2xl:justify-between"
         >
           <div class="pt-[80px] 2xl:ms-[250px]">
             <div class="-mb-12 md:mb-0 max-w-[220px] sm:max-w-[376px]">
@@ -420,7 +420,7 @@
         <!-- scik patient care -->
         <div
           id="sick"
-          class="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5"
+          class="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5 2xl:max-w-[2000px] 2xl:justify-between"
         >
           <div class="mt-[120px] md:mt-0 2xl:ms-[250px]">
             <div class="-mb-12 md:mb-0 max-w-[220px] sm:max-w-[356px]">
@@ -563,7 +563,7 @@
         <!-- surgery -->
         <div
           id="surgery"
-          class="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5"
+          class="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5 2xl:max-w-[2000px] 2xl:justify-between"
         >
           <div class="mt-[120px] md:mt-0 2xl:ms-[250px]">
             <div class="-mb-12 md:mb-0 max-w-[220px] sm:max-w-[356px]">
@@ -659,7 +659,7 @@
         <!-- additonal sevices -->
         <div
           id="additional"
-          class="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5"
+          class="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5 2xl:max-w-[2000px] 2xl:justify-between"
         >
           <div class="pt-[130px] 2xl:ms-[250px]">
             <div class="-mb-12 md:mb-0 max-w-[240px] sm:max-w-[370px]">
@@ -891,7 +891,7 @@
             <input
               type="text"
               placeholder="Email"
-              class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
+              class="border-2 bg-transparent placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
             />
             <div class="flex items-center gap-x-5 mt-6">
               <span class="group transition-all ease-in duration-300">
@@ -1056,7 +1056,7 @@
               <li
                 class="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
               >
-                <a href="./animal-health-check.html" class="avanttTRIAL-Normal">
+                <a href="./join-team.html" class="avanttTRIAL-Normal">
                   Carreers</a
                 >
               </li>
@@ -1131,6 +1131,10 @@
           },
           1280: {
             slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1500: {
+            slidesPerView: 6,
             spaceBetween: 30,
           },
         },

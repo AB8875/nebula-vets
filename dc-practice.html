@@ -12,13 +12,12 @@
       href="./assests/img/favicon.ico"
       type="image/x-icon"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NAV BAR -->
     <div class="bg-[#494336]">
       <section class="relative overflow-hidden">
-        <nav class="bg-[#494336]">
+        <nav class="bg-[#494336] fixed top-0 w-full !z-10">
           <div
             data-aos="fade-right"
             data-aos-duration="1500"
@@ -77,7 +76,7 @@
                     <a href="./about-nebula-vets.html"> ABOUT US</a>
                   </li>
                   <li
-                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    class="roboto-mono hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in active"
                   >
                     <a href="./dc-practice.html">LOCATION</a>
                   </li>
@@ -110,7 +109,7 @@
 
             <div
               id="sidebar"
-              class="fixed z-10 top-0 right-[-100%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-16 pt-16 flex flex-col overflow-y-auto"
+              class="fixed z-40 top-0 right-[-200%] w-[60vw] h-full bg-[#494336] shadow-lg transition-transform duration-300 p-5 ps-8 pt-16 flex flex-col overflow-y-auto"
             >
               <button id="closeBtn" class="self-end text-[#D7D9DD] text-4xl">
                 &times;
@@ -160,7 +159,7 @@
         <div
           data-aos="fade-left"
           data-aos-duration="1500"
-          class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12"
+          class="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[150px]"
         >
           <div
             class="flex flex-col-reverse lg:flex-row items-center justify-around mt-[5px] lg:mt-[50px] xl:mt-[80px] pb-10 md:pb-20"
@@ -213,8 +212,8 @@
         data-aos-duration="1500"
         class="max-w-[1200px] mx-auto px-0 lg:px-4 md:px-7 lg:px-10 xl:px-12 pt-11 pb-[60px] lg:pb-[140px] lg:pt-20"
       >
-        <div class="flex items-start gap-10 flex-col-reverse lg:flex-row">
-          <div class="max-w-none lg:max-w-[420px] px-4 lg:px-0">
+        <div class="flex items-start flex-col-reverse lg:flex-row">
+          <div class="max-w-none lg:max-w-[420px] px-4 lg:px-0 w-full">
             <h1
               class="text-[#494336] avanttTRIAL-Normal text-2xl sm:text-3xl md:text-4xl"
             >
@@ -246,12 +245,15 @@
             <p
               class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-2xl leading-[150%] mt-8 roboto-mono"
             >
-              <a href="tel: +1 (212) 123-4567"> Phone: (212) 123-4567</a> <br />
-              <a href="mailto:hello@nebulavets.com "> hello@nebulavets.com </a>
+              <a href="tel: +1 (212) 123-4567"> Phone: (212) 123-4567</a>
+              <br />
+              <a href="mailto:hello@nebulavets.com"> hello@nebulavets.com </a>
             </p>
           </div>
 
-          <div class="relative text-end h-[570px] w-full !max-w-[800px]">
+          <div
+            class="relative text-end h-[570px] w-full !max-w-[750px] lg:right-[-80px]"
+          >
             <div
               class="overflow-hidden bg-none w-full !max-w-[800px] h-[570px]"
             >
@@ -338,7 +340,7 @@
             <input
               type="text"
               placeholder="Email"
-              class="border-1 border-[#D9D9D9] placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
+              class="border-2 bg-transparent placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
             />
             <div class="flex items-center gap-x-5 mt-6">
               <span class="group transition-all ease-in duration-300">
@@ -562,10 +564,6 @@
       menuBtn.addEventListener("click", openSidebar);
       closeBtn.addEventListener("click", closeSidebar);
       overlay.addEventListener("click", closeSidebar);
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
     </script>
   </body>
 </html>
